@@ -1,0 +1,55 @@
+h2 {
+	color:red;
+	background:;
+
+}
+
+.box {
+	width: 400px; 
+	height: 311px; 
+	background-color: #f00;
+	position: relative;
+
+}
+.arrow-up {
+	width: 0; 
+	height: 0; 
+	border-left: 200px solid transparent;
+	border-right: 200px solid transparent;
+	top: 18%;
+	border-bottom: 200px solid black;
+	position: absolute;
+}
+
+
+
+
+
+
+
+
+/*h1 {
+	margin: 0 auto;
+	top: 50%;
+}*/
+
+
+
+
+
+/* <!--  to make a special font -->
+		put any name font after family*/
+
+/*p {
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+*/
+
+
+/*<!-- #triangle-up {
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 100px solid red;
+} */
