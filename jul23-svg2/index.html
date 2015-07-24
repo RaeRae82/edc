@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>SVG2</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<style>body {margin: 0}</style>
+
+</head>
+<body>
+	
+	<svg width="800" height="600">
+		<circle cx="50" cy="50" r="50" stroke-width="5" stroke="green" fill="red"></circle>
+
+		<rect x="100" y="100" rx="20" ry="20" width="300" height="150" fill="yellow"></rect>
+		<!-- rx and ry is th curve of the rect -->
+
+		<rect x="100" y="0" width="100" height="100" fill="blue"></rect>
+
+		<ellipse cx="100" cy="300" rx="100" ry="50" fill="orange"></ellipse>
+	</svg>
+
+
+
+	<svg width="600" height="300">
+		<circle cx="70" cy="70" r="50" stroke-width="8" stroke="blue" fill="none"></circle>
+		<circle cx="130" cy="125" r="50" stroke-width="8" stroke="yellow" fill="none"></circle>
+		<circle cx="190" cy="70" r="50" stroke-width="8" stroke="black" fill="none"></circle>
+		<circle cx="250" cy="125" r="50" stroke-width="8" stroke="green" fill="none"></circle>
+		<circle cx="310" cy="70" r="50" stroke-width="8" stroke="red" fill="none"></circle>
+	</svg>
+
+	<svg width="800" height="800">
+		
+		<defs>
+			<radialGradient id="grad1" cx="50%" cy="30%" r="75%" fx="50%" fy="50%">
+				<stop offset="40%" style="stop-color:hsla(0, 0%, 100%, .45);" />
+				<stop offset="100%" style="stop-color:hsla(0, 0%, 0%, .25);" />
+			</radialGradient>
+		</defs>
+
+		<ellipse cx="255" cy="540" rx="50" ry="90" fill="url(#grad1)" stroke="#000"></ellipse> <!-- left leg -->
+		<ellipse cx="350" cy="540" rx="50" ry="90" fill="url(#grad1)" stroke="#000"></ellipse> <!-- right leg -->
+
+		<ellipse cx="300" cy="310" rx="140" ry="180" fill="url(#grad1)" stroke="#000"></ellipse> <!--body -->
+
+		<circle cx="360" cy="200" r="10" stroke-width="1" stroke="gray" fill="url(#grad1)"></circle> <!-- heart -->
+
+		
+		<ellipse cx="300" cy="100" rx="80" ry="55" fill="url(#grad1)" stroke="black" stroke-width="1"></ellipse>  <!-- head -->
+
+		<circle cx="275" cy="80" r="4" stroke-width="2" stroke="black" fill="#000"></circle> <!--eye -->
+		<circle cx="325" cy="80" r="4" stroke-width="2" stroke="black" fill="#000"></circle> <!--eye -->
+		 <line x1="280" y1="80" x2="320" y2="80"stroke-width=".5"
+		stroke="#000"></line> <!--eye line --> 
+
+
+		<ellipse cx="180" cy="300" rx="40" ry="120" stroke="#000" fill="url(#grad1)" transform="rotate(20 185 200)"></ellipse> <!-- left arm -->
+		<ellipse cx="410" cy="300" rx="40" ry="120" stroke="#000" fill="url(#grad1)" transform="rotate(-20 415 200)"></ellipse> <!-- right arm -->
+
+		<!-- transform= rotate(deg x y)" -->
+
+
+
+	</svg>
+
+	<svg width="100" height="100">
+		<path d="M20 20 L50 70 L20 70 Z" stroke-width="5" stroke="#000" stroke-linecap="round" />
+	</svg>
+	<svg width="500" height="500">
+	<!-- MY NAME -->
+		
+		<path d="M20 20 L20 300 L20 20 L220 20 L220 130 L120 130 L230 300 L150 300 L80 180 L80 300 L20 300" fill="#000" stroke-width="5" stroke="red"/>
+		<rect x="110" y="60" rx="10" ry="10" width="55" height="35" fill="#fff" />
+
+		<!-- <path d="M240 65 L240 245 L280 300 L360 300 L400 260 L400 220 L345 220 L345 260 L338 263" stroke-width="5" stroke="#000" fill="none" /> -->
+
+		
+	</svg>
+		<!-- <defs>
+			<radialGradient id="grad1" cx="50%" cy="30%" r="75%" fx="50%" fy="50%">
+				<stop offset="40%" style="stop-color:hsla(0, 0%, 100%, .45);" />
+				<stop offset="100%" style="stop-color:hsla(0, 0%, 0%, .25);" />
+			</radialGradient>
+		</defs>
+		<ellipse cx="250" cy="150" rx="200" ry="100" fill="url(#grad1)" /> -->
+	</svg>
+
+	<svg width="800" height="800">
+
+		<rect x="100" y="100" rx="20" ry="20" width="180" height="300" fill="red"></rect>
+		<!-- rx and ry is th curve of the rect -->
+		<rect x="350" y="100" rx="20" ry="20" width="180" height="300" fill="blue"></rect>
+
+		<!-- <path d="M250,220 C250,50 400,80 550,220"stroke-width="5" stroke="#fff" fill="red" />
+		 -->
+		<!-- <circle cx="70" cy="70" r="50" stroke-width="8" stroke="blue" fill="none"></circle> -->
+		<!--  <path d="M300,150 C300,250 400,250" stroke-width="6" fill="red" stroke="#fff"/>  -->
+		
+
+		 <circle cx="310" cy="250" r="140" stroke-width="8" stroke="#fff" fill="#000"></circle>
+
+		 <circle cx="" cy="" r="" stroke="8" stroke="#fff" fill="blue"></circle>
+
+
+
+
+		  <text x="100" y="100" fill="blue" font-size="80">PEPSI</text>
+
+		
+	</svg>
+
+
+
+
+
+
+
+
+</body>
+</html>

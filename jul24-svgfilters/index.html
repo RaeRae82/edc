@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>SVG Filters</title>
+	<style>
+		svg {background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Graph-paper.svg/400px-Graph-paper.svg.png);}
+	</style>
+</head>
+<body>
+
+	<svg width="150" height="150">
+		<defs>
+			<filter id="f1" x="0" y="0" width="200%" height="200%">
+				<feOffset result="offOut" in="SourceGraphic" dx="10" dy="10" />
+				<feColorMatrix result="matrixOut" in="offOut" type="matrix" values="0.2 0 0 0 0 0, 0.2 0 0 0 0 0, 0.2 0 0 0 0 0, 1 0" />
+				<feGaussianBlur result="blurOut" in="martixOut" stdDeviation="5" />
+				<feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+			</filter>
+
+		</defs>
+		<path d="M50,0 L70,30 L100,30 L70,50 L100,100 L50,80 L0,100 L30,50 L0,30 L30,30 Z" stroke="red" srtoke-width="1" fill="yellow" filter="url(#f1)" />
+	</svg>
+
+	<svg width="150" height="150">
+		<defs>
+			<linearGradient id="grad1" x1="0%" y1="0%" x2="0%" y2="100%">
+				<stop offset="0%" style="stop-color: hsla(0, 100%, 50%, 1);" />
+				<stop offset="20%" style="stop-color: hsla(60, 100%, 50%, 1);" />
+				<stop offset="40%" style="stop-color: hsla(120, 100%, 50%, 1);" />
+				<stop offset="60%" style="stop-color: hsla(180, 100%, 50%, 1);" />
+				<stop offset="80%" style="stop-color: hsla(230, 100%, 50%, 1);" />
+				<stop offset="100%" style="stop-color: hsla(300, 100%, 50%, 1);" />
+			</linearGradient>
+		</defs>
+		<path d="M50,0 L70,30 L100,30 L70,50 L100,100 L50,80 L0,100 L30,50 L0,30 L30,30 Z" stroke="red" srtoke-width="1" fill="url(#grad1)" filter="url(#f1)" />
+		<text fill="#000" font-size="20" font-family="Arial" x="30" y="55">RAE</text>
+	</svg>
+	
+	<svg width="150" height="150">
+		<defs>
+			<clipPath id="clip1">
+				<circle cx="40" cy="40"r="30" />
+			</clipPath>
+		</defs>
+		<path d="M50,0 L70,30 L100,30 L70,50 L100,100 L50,80 L0,100 L30,50 L0,30 L30,30 Z" stroke="red" srtoke-width="1" fill="yellow" clip-path="url(#clip1)" />
+
+	</svg>
+
+
+
+	<svg width="150" height="150">
+		<defs>
+			<mask id="mask1" x="0" y="0" width="130" height="130">
+				<rect x="20" y="20" width+'60' height="60" stroke="black" fill="white" />
+			</mask>
+		</defs>
+		<path d="M50,0 L70,30 L100,30 L70,50 L100,100 L50,80 L0,100 L30,50 L0,30 L30,30 Z" stroke="red" srtoke-width="1" fill="yellow" mask="url(#mask1)" />
+	</svg>
+</body>
+</html>
