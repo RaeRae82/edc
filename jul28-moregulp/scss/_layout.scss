@@ -1,0 +1,18 @@
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+main {
+	@extend %clearfix	
+}
+
+
+aside {
+	width: $aside-width;
+	float: left;
+	padding: 0 $halfpad;
+}
+article {
+	width: $aside;
+	float: left;
+	padding: 0 $pad;
+}

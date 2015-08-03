@@ -1,0 +1,74 @@
+main {
+  background-image: url("../img/banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  text-align: center;
+  color: white;
+}
+main h1 {
+  font-size: 400%;
+  padding-top: 75px;
+  padding-bottom: 0;
+}
+main a {
+  color: white;
+  padding: 15px;
+  text-decoration: none;
+}
+main .hp {
+  border: 2px solid white;
+  border-radius: 20px;
+  background-color: transparent;
+  padding: 10px;
+}
+
+ul > li {
+  list-style: none;
+}
+
+div.row::before, div.row::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+div[class^="col-"] {
+  padding: 10px;
+  float: left;
+}
+
+div.col-1 {
+  width: 75%;
+}
+
+div.col-2 {
+  width: 25%;
+}
+
+section {
+  background-color: lightgray;
+}
+
+.article {
+  padding-bottom: 10px;
+  float: left;
+  display: inline-block;
+  width: 33.333%;
+}
+
+.updates {
+  background-color: black;
+  color: white;
+}
+
+.info {
+  padding-bottom: 10px;
+  float: left;
+  display: inline-block;
+  width: 33.333%;
+}
