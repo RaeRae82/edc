@@ -1,0 +1,161 @@
+/* put your scss here */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: lightgray;
+}
+
+html {
+  height: 100%;
+}
+
+.home {
+  height: 150px;
+  width: cover;
+  margin: 0 auto;
+  font-size: 245%;
+  color: white;
+  text-align: center;
+  padding: 40px;
+  background-image: url("../img/Cool-HD-Backgrounds6.jpg");
+  background-position: center;
+  border-style: solid;
+  border-color: purple;
+  border-size: 3px;
+}
+
+#side1 {
+  background-color: lightblue;
+  height: 100%;
+  width: 30%;
+  float: left;
+  padding: 5px;
+  box-shadow: inset 0 0 3em purple;
+  border-style: solid;
+  border-size: 3px;
+}
+#side1 .btns {
+  padding-bottom: 5px;
+  text-decoration: none;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  float: right;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+#side1 .btns img {
+  position: left;
+  margin: 12px;
+  margin-bottom: 15px;
+  margin-left: 12px;
+  height: 500px;
+  box-shadow: 7px 5px 5em brightwhite;
+}
+
+#side1 a {
+  padding: 5px;
+  float: left;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  color: white;
+  text-decoration: none;
+}
+
+#side1 a:hover {
+  transition: rotate(360deg);
+}
+
+#side2 {
+  height: 250%;
+  width: 70%;
+  float: right;
+  padding: 15px;
+}
+
+.infi {
+  height: 200px;
+  background-image: url("../img/scorpio.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-margin: 0 auto;
+}
+.infi .pg2 {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 5px;
+  color: black;
+  font-size: 100%;
+  text-decoration: none;
+}
+.infi .pg2 a {
+  padding: 10px;
+  color: black;
+}
+
+h1 {
+  text-align: center;
+  font-size: 250%;
+  margin: 0 auto;
+}
+
+.resume {
+  background-color: #fff5f5;
+  margin: 0;
+  border-bottom: 2px solid black;
+  border-padding-bottom: 0;
+  text-align: center;
+}
+.resume .pg3 {
+  padding-bottom: 5px;
+  text-decoration: none;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  float: left;
+}
+
+header img {
+  float: right;
+}
+
+.pg3 a {
+  padding: 10px;
+  color: black;
+}
+
+p {
+  padding-left: 10px;
+}
+
+.work {
+  background-color: #ffebeb;
+  box-shadow: inset 0 0 3em white;
+  margin-top: 0;
+  padding: 20px;
+}
+.work h4 {
+  margin-top: 0;
+}

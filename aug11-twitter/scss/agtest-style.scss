@@ -1,0 +1,69 @@
+$margin: 10px;
+box-sizing: border-box;
+html {
+	height: 100%;
+}
+body {
+ 	margin: 0;
+ 	min-height: 100%;
+	background-color: blue;
+}
+header {
+	text-align: center;
+	padding: 10px;
+	font-size: 150%;
+	margin-bottom: 50px
+}
+
+main {
+	display: flex;
+	justify-content: space-between;
+	
+}
+.ag2 {
+	width: 650px;
+	height: 850px;
+	background-color: hsla(0, 30%, 80%, .5);
+	
+	text-align: center;
+	display: flex;
+	flex-direction: row;  
+	padding: 0;
+	margin: 0;
+	.ag4, .ag5 {
+		background-color: pink;
+		width: calc(50% - #{$margin});
+		height: 100px;
+		text-align: center;
+		padding: 30px;
+		margin: 30px;
+	}
+}
+.ag1 {
+	width: 250px;
+	height: 250px;
+	background-color: hsla(0, 30%, 80%, .5);
+	text-align: center;
+	display: flex;
+	flex-direction: row;  
+	padding: 10px;
+	margin: 0;
+}
+.ag3 {
+	width: 250px;
+	height: 250px;
+	background-color: hsla(0, 30%, 80%, .5);
+	
+	text-align: center;
+	display: flex;
+	flex-direction: row;  
+	padding: 0;
+	margin: 0;
+}
+
+
+
+
+
+
+

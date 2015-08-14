@@ -1,0 +1,14 @@
+/* put your scss here */
+.hero {
+  height: 440px;
+  background-image: url("../img/banner.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero-banner {
+  padding: 40px;
+  background-color: #ededed;
+  text-align: center;
+}

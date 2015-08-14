@@ -1,0 +1,61 @@
+$main-color: hsla(0, 0%, 25%, 1);
+
+@import url(http://fonts.googleapis.com/css?family=Questrial);
+
+
+
+body {
+	font-family: 'Questrial', sans-serif;
+}
+.pic {
+	margin-top: 40px;
+	height: 400px;
+	margin-right: 50px;
+	margin-left: 50px;
+	background-image: url("../img/banner_720.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+.header {
+	text-align: center;
+	color: hsla(0, 0%, 25%, 1);
+	border-bottom: 1px solid lighten($main-color, 50);
+	h1 {
+	font-size: 2.8em;
+	padding: 20px;
+	}
+	p {
+		
+		margin-right: 100px;
+		margin-left: 100px;
+		padding-bottom: 40px;
+	}
+}
+li {
+	display: inline-block;
+}
+@media screen and (max-width: 768px){
+	.boxes3 {
+		text-align: center;
+		div {
+			width: 33%;
+			float: left;
+			padding: 10px;
+			box-sizing: border-box;
+			color: hsla(0, 0%, 25%, 1);
+
+		}
+		&::before, &::after {
+			content: "";
+			display: block;
+			clear: both;
+		}
+		a {
+			background-color: lightblue;
+			padding: 10px;
+
+		}
+	}
+}
+

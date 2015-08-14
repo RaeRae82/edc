@@ -1,0 +1,118 @@
+a {
+  color: #db3358;
+  text-decoration: underline;
+}
+
+.btn-clearcut {
+  color: white;
+  text-decoration: none;
+  background-color: #db3358;
+  border-color: #ba2142;
+}
+.btn-clearcut:hover {
+  color: white;
+  background-color: #e35f7b;
+}
+
+.content {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.hero {
+  height: 440px;
+  background-image: url("../img/banner.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-header {
+  background-color: #ededed;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.navbar {
+  margin-bottom: 0;
+  border: none;
+  padding: 20px 0;
+}
+
+.navbar-default {
+  background-color: white;
+}
+
+#welcome ul, #lists ul {
+  padding: 0;
+  margin: 0;
+}
+#welcome li, #lists li {
+  list-style: none;
+  border-bottom: 1px solid #e6e6e6;
+  padding: 12px 0;
+}
+#welcome li::before, #lists li::before {
+  content: "\e013";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-right: 5px;
+  text-align: center;
+  line-height: 24px;
+  background-color: #db3358;
+  color: white;
+  font-family: 'Glyphicons Halflings';
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+  -webkit-text-rendering: optimizeLeginility;
+  -moz-text-rendering: optimizeLeginility;
+  -ms-text-rendering: optimizeLeginility;
+  -o-text-rendering: optimizeLeginility;
+  text-rendering: optimizeLeginility;
+  -webkit-font-smoothing: antialiassed;
+  -moz-font-smoothing: antialiassed;
+  -ms-font-smoothing: antialiassed;
+  -o-font-smoothing: antialiassed;
+  font-smoothing: antialiassed;
+}
+#welcome #welcome h2, #lists #welcome h2 {
+  font-size: 125%;
+}
+#welcome #welcome h3, #lists #welcome h3 {
+  margin-top: 0;
+  margin-bottom: 50px;
+  font-size: 110%;
+}
+#welcome #welcome a, #lists #welcome a {
+  vertical-align: top;
+}
+
+#promo .content {
+  text-align: center;
+}
+#promo i {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  background-color: #db3358;
+  font-size: 30px;
+  color: white;
+}
+#promo h2 {
+  font-size: 125%;
+}
+
+#lists {
+  background-color: #db3358;
+}
+#lists h2, #lists a {
+  color: white;
+}
+#lists li::before {
+  background-color: white;
+  color: #db3358;
+}
