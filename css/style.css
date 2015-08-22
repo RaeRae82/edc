@@ -1,0 +1,19 @@
+/* put your scss here */
+.navbar-brand {
+  font-size: 200%;
+}
+
+main {
+  width: cover;
+  height: 600px;
+  background-image: url("../img/12935043E112Z-29249.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-width: 100%;
+  background-height: 100%;
+}
+main div {
+  font-size: 300%;
+  text-align: center;
+}

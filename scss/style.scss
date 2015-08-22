@@ -1,0 +1,121 @@
+/* put your scss here */
+
+.navbar-brand {
+	font-size: 200%
+}
+main {
+	width: cover;
+	height: 600px;
+	background-image: url("../img/12935043E112Z-29249.gif");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-width: 100%;
+	background-height: 100%;
+	div {
+		font-size: 300%;
+		text-align: center;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// *, *::before, *::after {
+// 	box-sizing: border-box;
+// @import url(http://fonts.googleapis.com/css?family=Pacifico);
+// @import url(http://fonts.googleapis.com/css?family=Dancing+Script);
+// }
+// body {
+// 	background-color: lightgray;
+// }
+
+
+// .hder {
+// 	height: 150px;
+// 	width: 100%;
+// 	margin: 0 auto;
+// 	font-size: 245%;
+// 	font-family: 'Dancing Script', cursive;
+// 	// font-family: 'Pacifico', cursive;
+// 	color: white;
+// 	text-align: center;
+// 	padding: 40px;
+// 	background: {
+// 		image: url("../img/Cool-HD-Backgrounds6.jpg");
+// 		position: center;
+// 		repeat:no-repeat;
+// 		size: cover;
+// 	}
+// 	border: {
+// 		style: solid;
+// 		color: purple;
+// 		size: 3px;
+// 	}
+// }
+
+// #side1 {
+// 	position: absolute;
+// 	background-color: lightblue;
+// 	// height: 100%;
+// 	width: 50%;
+// 	float: left;
+// 	padding: 5px;
+// 	box-shadow: inset 0 0 3em purple;
+// 	border: {
+// 		style: solid;
+// 		size: 3px;
+// 	}
+// 	.btns {
+// 		padding-bottom: 5px;
+// 		text-decoration: none;
+// 		display: flex;
+// 		flex-direction: column;
+// 		float: right;
+// 		img {
+// 			position: relative;
+// 			margin: 12px;
+// 			margin-bottom: 15px;
+// 			margin-left: 12px;
+// 			width: 90%;
+// 			height: 300px;
+// 			box-shadow: 7px 5px 5em white;
+// 		}
+// 		display: flex;
+// 		flex-direction: column;
+// 	}
+// }
+// #side1 a {
+// 	padding: 5px;
+// 	// float: right;
+// 	display: flex;
+// 	// flex-direction: column;
+// 	justify-content: flex-end;
+// 	color: white;
+// 	text-decoration: none;
+// 	font-size: 150%;
+// }
+
+
+// #side2 {
+// 	width: 50%;
+// 	float: right;
+// 	padding: 15px;
+// }
+
