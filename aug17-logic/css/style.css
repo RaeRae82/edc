@@ -1,0 +1,175 @@
+/* put your scss here */
+.btn {
+  display: inline-block;
+  padding: 8px 16px;
+  border: 1px solid gray;
+  background-color: lightgray;
+  font-size: 16px;
+}
+.btn.btn-lg {
+  padding: 16px 32px;
+  border-width: 4px;
+}
+.btn.btn-sm {
+  padding: 4px 8px;
+  border-width: 4px;
+}
+.btn.btn-pill {
+  border-radius: 24px;
+}
+
+section {
+  background-color: #444;
+  color: #909090;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+aside li {
+  line-height: 3;
+  list-style: none;
+  padding-left: 20px;
+}
+aside li:nth-of-type(1) {
+  background-color: #bfb040;
+  background-color: #d2c879;
+  border-right-color: #736a26;
+  border-right-style: solid;
+  border-right-width: 10px;
+}
+aside li:nth-of-type(2) {
+  background-color: #5ebf40;
+  background-color: #8ed279;
+  border-right-color: #387326;
+  border-right-style: solid;
+  border-right-width: 10px;
+}
+aside li:nth-of-type(3) {
+  background-color: #40bf93;
+  background-color: #79d2b3;
+  border-right-color: #267358;
+  border-right-style: solid;
+  border-right-width: 10px;
+}
+aside li:nth-of-type(4) {
+  background-color: #407bbf;
+  background-color: #79a3d2;
+  border-right-color: #264a73;
+  border-right-style: solid;
+  border-right-width: 10px;
+}
+aside li:nth-of-type(5) {
+  background-color: #7540bf;
+  background-color: #9e79d2;
+  border-right-color: #462673;
+  border-right-style: solid;
+  border-right-width: 10px;
+}
+aside li:nth-of-type(6) {
+  background-color: #bf4099;
+  background-color: #d279b8;
+  border-right-color: #73265c;
+  border-right-style: solid;
+  border-right-width: 10px;
+}
+aside li:nth-of-type(7) {
+  background-color: #bf5740;
+  background-color: #d28979;
+  border-right-color: #733426;
+  border-right-style: solid;
+  border-right-width: 10px;
+}
+aside li:nth-of-type(8) {
+  background-color: #b7bf40;
+  background-color: #ccd279;
+  border-right-color: #6e7326;
+  border-right-style: solid;
+  border-right-width: 10px;
+}
+aside li:nth-of-type(9) {
+  background-color: #46bf40;
+  background-color: #7ed279;
+  border-right-color: #2a7326;
+  border-right-style: solid;
+  border-right-width: 10px;
+}
+aside li:nth-of-type(10) {
+  background-color: #40bfaa;
+  background-color: #79d2c4;
+  border-right-color: #267366;
+  border-right-style: solid;
+  border-right-width: 10px;
+}
+aside li:nth-of-type(11) {
+  background-color: #4064bf;
+  background-color: #7992d2;
+  border-right-color: #263c73;
+  border-right-style: solid;
+  border-right-width: 10px;
+}
+aside li:nth-of-type(12) {
+  background-color: #8c40bf;
+  background-color: #af79d2;
+  border-right-color: #542673;
+  border-right-style: solid;
+  border-right-width: 10px;
+}
+aside li:nth-of-type(13) {
+  background-color: #bf4082;
+  background-color: #d279a7;
+  border-right-color: #73264e;
+  border-right-style: solid;
+  border-right-width: 10px;
+}
+aside li:nth-of-type(14) {
+  background-color: #bf6f40;
+  background-color: #d29a79;
+  border-right-color: #734226;
+  border-right-style: solid;
+  border-right-width: 10px;
+}
+aside li:nth-of-type(15) {
+  background-color: #9fbf40;
+  background-color: #bcd279;
+  border-right-color: #607326;
+  border-right-style: solid;
+  border-right-width: 10px;
+}
+aside li:nth-of-type(16) {
+  background-color: #40bf51;
+  background-color: #79d285;
+  border-right-color: #267330;
+  border-right-style: solid;
+  border-right-width: 10px;
+}
+aside li:nth-of-type(17) {
+  background-color: #40bdbf;
+  background-color: #79d1d2;
+  border-right-color: #267173;
+  border-right-style: solid;
+  border-right-width: 10px;
+}
+aside li:nth-of-type(18) {
+  background-color: #404dbf;
+  background-color: #7982d2;
+  border-right-color: #262e73;
+  border-right-style: solid;
+  border-right-width: 10px;
+}
+aside li:nth-of-type(19) {
+  background-color: #a440bf;
+  background-color: #bf79d2;
+  border-right-color: #622673;
+  border-right-style: solid;
+  border-right-width: 10px;
+}
+aside li:nth-of-type(20) {
+  background-color: #bf406a;
+  background-color: #d27997;
+  border-right-color: #732640;
+  border-right-style: solid;
+  border-right-width: 10px;
+}

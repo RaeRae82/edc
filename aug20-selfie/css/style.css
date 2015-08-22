@@ -1,0 +1,123 @@
+/* put your scss here */
+@import url(http://fonts.googleapis.com/css?family=Indie+Flower);
+body {
+  background-color: red;
+}
+
+.navbar-default {
+  background-color: dodgerblue;
+  background-size: cover;
+  margin-bottom: 0;
+}
+
+h3 {
+  text-align: center;
+  font-family: 'Indie Flower', cursive;
+  font-size: 500%;
+  margin-top: 0;
+}
+
+.paws {
+  text-align: center;
+}
+
+i {
+  padding: 20px;
+}
+
+header {
+  border: 3px dashed purple;
+}
+
+section {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  margin-bottom: 75px;
+  padding-top: 20px;
+}
+section div {
+  width: 25%;
+  padding: 30px;
+}
+
+section div:nth-of-type(1):hover {
+  background-image: none;
+  background-color: #e6c4b3;
+}
+section div:nth-of-type(2):hover {
+  background-image: none;
+  background-color: #e6e1b3;
+}
+section div:nth-of-type(3):hover {
+  background-image: none;
+  background-color: #b3e6cf;
+}
+section div:nth-of-type(4):hover {
+  background-image: none;
+  background-color: #e6b3b4;
+}
+
+@media screen and (min-width: 1200px) {
+  body {
+    background-color: red;
+    color: black;
+  }
+}
+@media screen and (max-width: 1250px) {
+  body {
+    background-color: blue;
+    color: white;
+  }
+}
+@media screen and (max-width: 850px) {
+  body {
+    background-color: orange;
+    color: black;
+  }
+}
+@media screen and (max-width: 600px) {
+  body {
+    background-color: teal;
+    color: white;
+  }
+}
+main div:nth-of-type(1) {
+  background-image: url("../img/pic-1.jpg");
+  width: 33.33333%;
+  height: 30vw;
+  background-size: cover;
+  background-position: center;
+}
+
+main div:nth-of-type(2) {
+  background-image: url("../img/pic-2.jpg");
+  width: 33.33333%;
+  height: 30vw;
+  background-size: cover;
+  background-position: center;
+}
+
+main div:nth-of-type(3) {
+  background-image: url("../img/pic-3.jpg");
+  width: 33.33333%;
+  height: 30vw;
+  background-size: cover;
+  background-position: center;
+}
+
+.pics div {
+  margin: 20px;
+  transition: 2s, 2s, 2s;
+}
+
+.pics div:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}

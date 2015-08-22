@@ -1,0 +1,99 @@
+/* put your scss here */
+
+$btn-size: 8px;
+
+.btn {
+	display: inline-block;
+	padding: $btn-size $btn-size*2;
+	border: 1px solid gray;
+	background-color: lightgray;
+	font-size: $btn-size*2;
+	&.btn-lg {
+		$btn-size: $btn-size*2;
+		padding: $btn-size $btn-size*2;
+		border-width: $btn-size/4;
+	}
+	&.btn-sm {
+		$btn-size: $btn-size/2;
+		padding: $btn-size $btn-size*2;
+		border-width: $btn-size/1;
+	}
+	&.btn-pill {
+		border-radius: $btn-size*3;
+	}
+}
+$section-bg: #444;
+$font-clr: #101010;
+$bg-brightness: lightness($section-bg);
+
+section {
+	background-color: $section-bg;
+	@if $bg-brightness >= 15% and $bg-brightness <= 30% {
+		color: lighten($font-clr, 50);
+	}
+	@else if $bg-brightness < 15% {
+		color: lighten($font-clr, 75);
+	}
+	@else {
+		color: $font-clr;
+	}
+
+
+
+	// background-color: $section-bg;
+	// @if $hue >= 300 {
+	// 	color: white;
+	// }
+	// @else if $hue >= 0deg and $hue <= 100deg {
+	// 	color: yellow;
+	// }
+	// @else if $hue >= 100deg and $hue <= 180deg{
+	// 	color: black;
+	// }
+	// @else if $hue >= 180deg and $hue <= 260deg{
+	// 	color: purple;
+	// }
+	// @else if $hue >= 260deg and $hue <= 360deg{
+	// 	color: orange;
+	// }
+	// font-size: $hue;
+	// background-color: $section-bg;
+	
+
+
+	// @if $section-bg == yellow {
+	// 	color: black;
+	// 	font-size: 250%;
+	// }
+	// @else if $section-bg == red{
+	// 	color: green;
+	// 	font-size: 75%;
+	// }
+	// @else{
+	// 	color: white;
+	// 	font-size: 150%;
+	// }
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+}
+aside li {
+	line-height: 3;
+	list-style: none;
+	padding-left: 20px;
+	@for $i from 1 through 20 {
+		$deg: $i*53;
+		$bg-clr: hsla($deg, 50%, 50%, 1);
+		&:nth-of-type(#{$i}){
+			background-color: $bg-clr;
+			background-color: lighten($bg-clr, 15);
+			border-right: {
+				color: darken($bg-clr, 20);
+				style: solid;
+				width: 10px;
+			}
+		}
+	}
+}
