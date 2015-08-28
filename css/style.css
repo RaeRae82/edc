@@ -48,3 +48,7 @@ main div {
 .heading img {
   text-align: center;
 }
+
+.heading a {
+  font-size: 30px;
+}
