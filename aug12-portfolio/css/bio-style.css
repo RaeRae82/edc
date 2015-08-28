@@ -1,39 +1,49 @@
-body {
-  background-image: url("../img/356128.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+header {
+  width: cover;
+  height: 150px;
+  background-image: url("../img/6887296-fantasy-background-images.jpg");
+  background-width: 100%;
+  background-height: 150px;
+  background-position: center;
 }
 
-.infi {
-  height: 200px;
-  background-image: url("../img/scorpio.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-margin: 0 auto;
+.navbar-default {
+  background-color: pink;
+  margin-bottom: 0;
 }
-.infi .pg2 {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-justify-content: flex-start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  padding: 5px;
-  color: black;
-  font-size: 100%;
-  text-decoration: none;
-}
-.infi .pg2 a {
-  padding: 10px;
-  color: black;
+
+.navbar-brand {
+  font-size: 200%;
+  padding-bottom: 15px;
+  padding-top: 10px;
 }
 
 h1 {
   text-align: center;
   font-size: 250%;
   margin: 0 auto;
+}
+
+article {
+  height: 600px;
+  background-color: rgba(255, 204, 238, 0.5);
+  background-width: 100%;
+  background-height: 500px;
+  padding-top: 25px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+article img {
+  width: 300px;
+  height: 300px;
+}
+
+.pic1 {
+  float: right;
+  margin-left: 20px;
+}
+
+.pic2 {
+  float: left;
+  margin-right: 20px;
 }

@@ -1,41 +1,51 @@
 // page 2
-body {
+
+header {
+	width: cover;
+	height: 150px;
 	background: {
-		image: url("../img/356128.jpg");
-		repeat: no-repeat;
-		size: cover;
-		
+		image: url("../img/6887296-fantasy-background-images.jpg");
+		width: 100%;
+		height: 150px;
+		position: center;
 	}
 }
-.infi {
-	height: 200px;
-	background: {
-		image: url("../img/scorpio.jpg");
-		repeat: no-repeat;
-		size: cover;
-		position: center;
-		margin: 0 auto;
-	}
-	.pg2 {
-		display: flex;
-		flex-direction: column;
-		justify-content: flex-start;
-		padding: 5px;
-		
-		color: black;
-		font-size: 100%;
-		text-decoration: none;
-	}
-	.pg2 a {
-		padding: 10px;
-		color: black;
-	}
+.navbar-default {
+	background-color: pink;
+	margin-bottom: 0;
+}
+.navbar-brand {
+	font-size: 200%;
+	padding-bottom: 15px;
+	padding-top: 10px;
 }
 h1 {
 	text-align: center;
 	font-size: 250%;
 	margin: 0 auto;
 }
+article {
+	height: 600px;
+	background: {
+		color: hsla(320, 100%, 90%, .5);
+		width: 100%;
+		height: 500px;
+	}
+	padding-top: 25px;
+	padding-left: 30px;
+	padding-right: 30px;
+	img {
+		width: 300px;
+		height: 300px;
+	}
+}
 
-
+.pic1 {
+	float: right;
+	margin-left: 20px;
+}
+.pic2 {
+	float: left;
+	margin-right: 20px;
+}
 

@@ -1,19 +1,50 @@
 /* put your scss here */
-.navbar-brand {
-  font-size: 200%;
+@import url(http://fonts.googleapis.com/css?family=Dancing+Script);
+@import url(http://fonts.googleapis.com/css?family=Pacifico);
+header {
+  width: cover;
+  height: 150px;
+  background-image: url("../img/6887296-fantasy-background-images.jpg");
+  background-width: 100%;
+  background-height: 150px;
+  background-position: center;
 }
 
-main {
-  width: cover;
-  height: 600px;
-  background-image: url("../img/12935043E112Z-29249.gif");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-width: 100%;
-  background-height: 100%;
+.navbar-default {
+  background-color: pink;
+  margin-bottom: 0;
 }
+
+.navbar-brand {
+  font-size: 200%;
+  padding-bottom: 15px;
+  padding-top: 10px;
+}
+
 main div {
-  font-size: 300%;
+  width: cover;
+  height: 500px;
+  background-color: #ed78e1;
+}
+
+.heading {
+  margin-top: 0;
+  height: 100%;
+  text-align: center;
+  color: purple;
+  border: 2px solid purple;
+  background-color: rgba(215, 117, 205, 0.5);
+  font-family: 'Dancing Script', cursive;
+  box-shadow: inset 0 0 10em #760a76;
+}
+.heading h2 {
+  font-size: 450%;
+  padding-top: 50px;
+}
+.heading p {
+  font-size: 150%;
+  font-family: 'Pacifico', cursive;
+}
+.heading img {
   text-align: center;
 }
