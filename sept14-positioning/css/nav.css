@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  font-family: Helvatica, Arial, sans-serif;
+}
+
+ul, ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: purple;
+  color: #f0f0f0;
+}
+nav h1 {
+  margin: 0;
+  float: left;
+}
+nav ul {
+  float: right;
+}
+nav li {
+  display: inline-block;
+  margin: 0 5px;
+}
+nav a {
+  color: inherit;
+  text-decoration: none;
+}
+
+nav::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.dropdown {
+  position: relative;
+}
+.dropdown:hover ul {
+  display: block;
+}
+.dropdown ul {
+  background-color: red;
+  position: absolute;
+  display: none;
+  top: 100%;
+  border-top: 10px solid purple;
+}
+.dropdown ul li {
+  display: block;
+}
