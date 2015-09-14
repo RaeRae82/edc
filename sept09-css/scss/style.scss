@@ -1,0 +1,36 @@
+/* put your scss here */
+
+p {
+	// width: 50%;
+	margin: 0;
+}
+a {
+	background-color: hsla(10, 30%, 60%, 1);
+	width: 25%;
+	height: 100px;
+	padding: 10px;
+	margin: 25px;
+	border-radius: 10px;
+	display: inline-block;
+}
+header {
+	background-color: hsla(210, 30%, 60%, 1);
+	height: 100px;
+	
+}
+article {
+	background-color: hsla(260, 30%, 60%, 1);
+	height: 250px;
+	width: 75%;
+	float: left;
+}
+aside {
+	background-color: hsla(300, 30%, 60%, 1);
+	height: 250px;
+	width: 25%;
+	float: left;
+}
+footer {
+	background-color: hsla(350, 30%, 60%, 1);
+	height: 100px;
+}

@@ -1,0 +1,164 @@
+$pink: hsla(343, 78%, 39%, 1);
+$orange: hsla(14, 71%, 52%, 1);
+$gray: hsla(0, 0%, 75%, 1);
+
+body {
+	font-family: 'Varela', sans-serif;
+}
+
+header {
+	color: white;
+	padding: 20px 50px 50px 30px;
+	background-color:  $pink;
+	h2 {
+		margin-top: 0;
+		padding-right: 50px;
+	}
+	nav {
+		display: flex;
+		padding: 20px;
+	}
+
+	.head {
+		margin-top: 75px;
+		font-size: 30px;
+		text-align: center;
+		padding-bottom: 50px;
+		h1 {
+			margin-bottom: 0;
+		}
+		p {
+			margin-top: 0;
+			margin-bottom: 75px;
+		}
+	}
+
+	.head a {
+		background-color: $orange;
+		padding: 15px;
+		border-radius: 5px;
+		text-decoration: none;
+		margin-top: 20px;
+	}
+	
+	a {
+		color: white;
+	}
+}
+
+article {
+	color: darken($gray, 20);
+	font-size: 30px;
+	margin: 0 auto;
+	text-align: center;
+	margin-bottom: 100px;
+	h1 {
+		padding-top: 50px;
+		margin-bottom: 0;
+		color: darken($gray, 50);
+	}
+	h3 {
+		font-size: 20px;
+		margin-top: 0;
+	}
+	p {
+
+		font-size: 20px;
+		padding: 30px;
+	}
+	a {
+		color: white;
+		font-size: 20px;
+		padding: 20px 30px;
+		background-color: $pink;
+		border-radius: 5px;
+		text-decoration: none;
+		letter-spacing: 5px;
+	}
+}
+.pic {
+	color: $gray;
+	font-size: 30px;
+	margin: 0 auto;
+	text-align: center;
+	background-color: $pink;
+	padding: 75px;
+	img {
+		margin: 50px;
+		border-radius: 5px;
+	}
+	h2 {
+		margin-bottom: 0;
+		color: white;
+	}
+	h3 {
+		margin-top: 0;
+		font-size: 25px;
+	}
+	a {
+		color: $pink;
+		background-color: white;
+		padding: 15px;
+		border-radius: 5px;
+		font-size: 20px;
+		letter-spacing: 5px;
+		text-decoration: none;
+	}
+	p {
+		padding-bottom: 50px;
+		font-size: 20px;
+		margin-top: 40px;
+	}
+}
+
+.info {
+	color: darken($gray, 30);
+	text-align: center;
+	margin: 50px;
+	font-size: 30px;
+	h2 {
+		color: darken($gray, 50);
+	}
+	h3 {
+		font-size: 20px;
+	}
+	p {
+		border: 1px solid lighten($gray, 15);
+		padding: 50px 30px; 
+		border-radius: 5px;
+		width: 320px;
+		font-size: 20px;
+		
+	}
+	a {
+		color: white;
+		font-size: 20px;
+		letter-spacing: 5px;
+		padding: 20px 30px;
+		background-color: $pink;
+		border-radius: 5px;
+		text-decoration: none;
+	}
+	.col-3 {
+		display: flex;
+		margin-bottom: 50px;
+		div {
+			padding: 10px;
+		}
+	}
+
+}
+
+
+
+
+footer {
+	width: 100%;
+	text-align: center;
+	color: $gray;
+	padding: 50px;
+	background-color: darken($gray, 50);
+
+}
+ 
+

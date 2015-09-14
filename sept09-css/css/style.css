@@ -1,0 +1,38 @@
+/* put your scss here */
+p {
+  margin: 0;
+}
+
+a {
+  background-color: #b8857a;
+  width: 25%;
+  height: 100px;
+  padding: 10px;
+  margin: 25px;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+header {
+  background-color: #7a99b8;
+  height: 100px;
+}
+
+article {
+  background-color: #8f7ab8;
+  height: 250px;
+  width: 75%;
+  float: left;
+}
+
+aside {
+  background-color: #b87ab8;
+  height: 250px;
+  width: 25%;
+  float: left;
+}
+
+footer {
+  background-color: #b87a85;
+  height: 100px;
+}

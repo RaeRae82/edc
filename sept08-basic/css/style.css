@@ -1,0 +1,39 @@
+/* put your scss here */
+@import url(https://fonts.googleapis.com/css?family=Raleway:300);
+body {
+  background-color: #00cdcf;
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+a {
+  margin: 40px auto;
+  display: block;
+  width: 150px;
+  color: inherit;
+  text-align: center;
+  background-color: #009a9c;
+  padding: 10px 15px;
+  text-decoration: none;
+}
+
+h1 {
+  width: 50%;
+  margin: 10px auto;
+  border-width: 4px 1px;
+  border-style: double solid;
+  padding: 40px 80px;
+  text-align: center;
+  font-weight: inherit;
+}
+
+p {
+  text-align: center;
+  margin: 30px auto;
+}
+
+strong {
+  font-weight: 700;
+}
