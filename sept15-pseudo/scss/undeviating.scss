@@ -17,8 +17,8 @@ header {
 	color: $white;
 	background-color: hsla(217, 69%, 40%, 1);
 	padding-top: 75px;
-	.i {
-		position: center;
+	div {
+		text-align: center;
 	}
 	h1 {
 		text-align: center;
@@ -33,12 +33,18 @@ header {
 		list-style: none;
 		display: inline-block;
 		padding-bottom: 15px;
+		&:hover {
+			background-color: $white;
+		}
 	}
 	a {
 		text-decoration: none;
 		color: $white;
 		padding: 20px;
 		font-size: 20px;
+		&:hover {
+			color: $blue;
+		}
 	}
 }
 
@@ -82,13 +88,13 @@ article {
 	.col-3 {
 		display: flex;
 		padding: 50px;
-		border-top: 5px solid lighten($gray, 60);
+		border-top: 1px solid lighten($gray, 60);
 		margin: 0 75px;
 	}
 	.col-4 {
 		display: flex;
 		padding: 50px;
-		border-top: 5px solid lighten($gray, 60);
+		border-top: 1px solid lighten($gray, 60);
 		margin: 0 75px;
 	}
 	a {
@@ -120,18 +126,29 @@ article {
 }
 footer {
 	background-color: $blue;
+	margin-right: 0 auto;
 	p {
 		text-align: center;
-		color: $white;
+		color: $litblue;
+		padding: 30px;
+		padding-top: 40px;
+		margin-top: 0;
 		a {
-			color: $white;
+			color: lighten($blue, 10);
 		}
 	}
 	i {
-		background: $litblue;
+		background-color: lighten($blue, 35);
 		color: $white;
-		position: center;
+		padding: 5px;
+		height: 40px;
+		width: 40px;
 	}
+	div {
+		text-align: center;
+		padding: 15px;
+	}
+
 
 }
 

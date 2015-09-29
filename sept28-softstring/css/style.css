@@ -1,0 +1,189 @@
+/* put your scss here */
+body {
+  font-family: "Source Sans Pro", arial, sans-serif;
+}
+
+header h1 {
+  color: #f67d79;
+  font-size: 55px;
+  font-weight: 200;
+  margin-left: 60px;
+}
+header ul {
+  float: right;
+  margin-top: -100px;
+  margin-right: 60px;
+  height: 68px;
+  border-left: 1px solid #e0e0e0;
+}
+header li {
+  display: inline;
+  list-style: none;
+  float: right;
+  margin-top: 25px;
+}
+header a {
+  text-decoration: none;
+  color: #f67d79;
+  font-size: 17px;
+  font-weight: 600;
+  padding: 20px;
+}
+header a:hover {
+  background-color: #f67d79;
+  color: white;
+}
+header img {
+  margin-left: 60px;
+}
+
+main {
+  background-color: #f2f2f2;
+  margin: 70px auto;
+  padding: 15px 35px;
+  line-height: 25px;
+}
+main div {
+  padding: 15px;
+}
+main .group {
+  float: left;
+}
+main::before, main::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+main .one {
+  width: 60%;
+}
+main .two, main .three {
+  width: 30%;
+  float: left;
+}
+main .two p, main .three p {
+  margin-bottom: 30px;
+}
+main::before, main::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+main .three {
+  border-left: 1px solid #e0e0e0;
+}
+main .four {
+  float: right;
+  width: 30%;
+  border-left: 1px solid #e0e0e0;
+  margin-top: -435px;
+  margin-right: 10px;
+}
+main h3 {
+  color: #404040;
+}
+main p {
+  color: #878787;
+  text-align: left;
+  margin-right: 90px;
+}
+main a {
+  color: white;
+  background-color: #f56661;
+  padding: 10px 20px;
+  margin-bottom: 30px;
+}
+
+article {
+  margin-top: 0;
+  margin-left: 60px;
+  line-height: 25px;
+  color: white;
+}
+article::before, article::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+article .pink, article .blue, article .green {
+  width: 30%;
+  float: left;
+  height: 320px;
+  padding: 50px 10px;
+  padding-top: 90px;
+  text-align: center;
+}
+article .pink p, article .blue p, article .green p {
+  padding: 20px 25px;
+  padding-bottom: 30px;
+}
+article .pink a, article .blue a, article .green a {
+  color: white;
+  padding: 20px 25px;
+}
+article .pink {
+  background-color: #f67d79;
+}
+article .pink a {
+  background-color: #f56661;
+}
+article .blue {
+  background-color: #78c4c9;
+}
+article .blue a {
+  background-color: #66bcc2;
+}
+article .green {
+  background-color: #a8c26b;
+}
+article .green a {
+  background-color: #9dbb58;
+}
+
+section {
+  margin: 70px auto;
+  margin-bottom: 0;
+  background-color: #f2f2f2;
+}
+section h1 {
+  font-size: 40px;
+  color: #404040;
+  padding: 40px 60px;
+  padding-top: 85px;
+}
+section p {
+  color: #878787;
+  padding: 0 60px;
+  padding-bottom: 85px;
+  line-height: 25px;
+  margin-bottom: 0;
+}
+section p a {
+  color: #f56661;
+}
+
+footer {
+  background-color: #e4c75e;
+  color: white;
+  margin-top: 0;
+}
+footer small {
+  display: block;
+  padding-top: 85px;
+  text-align: center;
+}
+footer i {
+  margin-bottom: 75px;
+  padding: 3px 3px;
+  background-color: #e0bf48;
+}
+footer a {
+  color: white;
+}
+footer .icons {
+  text-align: center;
+  padding-top: 35px;
+}
+footer .fa {
+  font-size: 20px;
+}

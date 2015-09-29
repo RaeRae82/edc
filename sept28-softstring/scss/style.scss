@@ -1,0 +1,198 @@
+/* put your scss here */
+
+$pink: hsla(2, 88%, 72%, 1);
+$blue: hsla(184, 43%, 63%, 1);
+$green: hsla(78, 42%, 59%, 1);
+$yellow: hsla(47, 71%, 63%, 1);
+$drkgray: hsla(0, 0%, 25%, 1);
+$gray: hsla(0, 0%, 53%, 1);
+$litgray: hsla(0, 0%, 95%, 1);
+
+
+body {
+	font-family: "Source Sans Pro", arial, sans-serif;
+}
+header {
+	h1 {
+		color: $pink;
+		font-size: 55px;
+		font-weight: 200;
+		margin-left: 60px;
+	}
+	ul {
+		float: right;
+		margin-top: -100px;
+		margin-right: 60px;
+		height: 68px;
+		border-left: 1px solid lighten($gray, 35);
+	}
+	li {
+		display: inline;
+		list-style: none;
+		float: right;
+		margin-top: 25px;
+	}
+	a {
+		text-decoration: none;
+		color: $pink;
+		font-size: 17px;
+		font-weight: 600;
+		padding: 20px;
+		&:hover {
+			background-color: $pink;
+			color: white;
+		}
+	}
+	img {
+		margin-left: 60px;
+	}
+}
+main {
+	background-color: $litgray;
+	margin: 70px auto;
+	padding: 15px 35px;
+	line-height: 25px;
+	div {
+		padding: 15px;
+	}
+	.group {
+		float: left;
+	}
+	&::before, &::after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+	.one {
+		width: 60%;
+	}
+	.two, .three {
+		width: 30%;
+		float: left;
+		p {
+			margin-bottom: 30px;
+		}
+	}
+	&::before, &::after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+	.three {
+		border-left: 1px solid lighten($gray, 35);
+	}
+	.four {
+		float: right;
+		width: 30%;
+		border-left: 1px solid lighten($gray, 35);
+		margin-top: -435px;
+		margin-right: 10px;
+	}
+	h3 {
+		color: $drkgray;
+	}
+	p {
+		color: $gray;
+		text-align: left;
+		margin-right: 90px;
+	}
+	a {
+		color: white;
+		background-color: darken($pink, 5);
+		padding: 10px 20px;
+		margin-bottom: 30px;
+	}
+}
+article {
+	margin-top: 0;
+	margin-left: 60px;
+	line-height: 25px;
+	color: white;
+	&::before, &::after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+	.pink, .blue, .green {
+		width: 30%;
+		float: left;
+		height: 320px;
+		padding: 50px 10px;
+		padding-top: 90px;
+		text-align: center;
+		p {
+			padding: 20px 25px;
+			padding-bottom: 30px;
+		}
+		a {
+			color: white;
+			padding: 20px 25px;
+		}
+
+	}
+	.pink {
+		background-color: $pink;
+		a {
+			background-color: darken($pink, 5);
+		}
+	}
+	.blue {
+		background-color: $blue;
+		a {
+			background-color: darken($blue, 5);
+		}
+	}
+	.green {
+		background-color: $green;
+		a {
+			background-color: darken($green, 5);
+		}
+	}
+}
+section {
+	margin: 70px auto;
+	margin-bottom: 0;
+	background-color: $litgray;
+	h1 {
+		font-size: 40px;
+		color: $drkgray;
+		padding: 40px 60px;
+		padding-top: 85px;
+	}
+	p {
+		color: $gray;
+		padding: 0 60px;
+		padding-bottom: 85px;
+		line-height: 25px;
+		margin-bottom: 0;
+		a {
+			color: darken($pink, 5);
+		}
+	}
+}
+footer {
+	background-color: $yellow;
+	color: white;
+	margin-top: 0;
+	small {
+		display: block;
+		padding-top: 85px;
+		text-align: center;
+	}
+	i {
+		margin-bottom: 75px;
+		padding: 3px 3px;
+		background-color: darken($yellow, 5);
+		
+	}
+	a {
+		color: white;
+	}
+	.icons {
+		text-align: center;
+		padding-top: 35px;
+	}
+	.fa {
+		font-size: 20px;
+	}
+}
