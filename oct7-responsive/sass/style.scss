@@ -327,6 +327,55 @@ header {
 }
 // PRICES styles end
 
+
+// COLUMNS style start
+nav {
+	background-color: $white;
+	@extend %clearfix;
+	h1 {
+		float: left;
+		line-height: 2em;
+		color: $drkgray;
+	}
+	ul {
+		float: right;
+	}
+	li {
+		display: inline-block;
+		line-height: 3em;
+		a {
+			color: transparentize($drkgray, .30)!important;
+			transition: color 200ms ease-in-out;
+			&:hover {
+				color: $keycolor!important;
+			}
+		}
+	}
+}
+#columns {
+	@extend %clearfix;
+	background-color: $litgray;
+	h2 {
+		text-align: center;
+	}
+	p {
+		text-align: center;
+	}
+	hr {
+		width: 40%;
+	}
+	.left {
+		float: left;
+		width: 40%;
+	}
+	.right {
+		float: right;
+		width: 50%;
+	}
+
+}
+// COLUMNS style end
+
 // FOOTER styles start
 footer {
 	background-color: $drkgray;

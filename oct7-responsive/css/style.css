@@ -2,7 +2,7 @@
 /* sass goes here */
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic);
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
-header nav::before, header #cta::before, #silos ul::before, #testimonials div::before, #features::before, header nav::after, header #cta::after, #silos ul::after, #testimonials div::after, #features::after {
+header #cta::before, #silos ul::before, #testimonials div::before, #features::before, nav::before, #columns::before, header #cta::after, #silos ul::after, #testimonials div::after, #features::after, nav::after, #columns::after {
   content: "";
   display: block;
   clear: both;
@@ -287,6 +287,50 @@ header #browser div span:nth-child(4)::after {
     float: none;
   }
 }
+nav {
+  background-color: white;
+}
+nav h1 {
+  float: left;
+  line-height: 2em;
+  color: #4c515d;
+}
+nav ul {
+  float: right;
+}
+nav li {
+  display: inline-block;
+  line-height: 3em;
+}
+nav li a {
+  color: rgba(76, 81, 93, 0.7) !important;
+  transition: color 200ms ease-in-out;
+}
+nav li a:hover {
+  color: #00b37a !important;
+}
+
+#columns {
+  background-color: #cfd2d8;
+}
+#columns h2 {
+  text-align: center;
+}
+#columns p {
+  text-align: center;
+}
+#columns hr {
+  width: 40%;
+}
+#columns .left {
+  float: left;
+  width: 40%;
+}
+#columns .right {
+  float: right;
+  width: 50%;
+}
+
 footer {
   background-color: #4c515d;
   color: white;

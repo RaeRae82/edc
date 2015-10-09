@@ -1,0 +1,60 @@
+/* sass goes here */
+$unitless: 10;
+$num: 13em;
+$strg: 'This is a string of text';
+$unit: 25px;
+$color: hsla(220, 30%, 60%, 1);
+$width: 20vw;
+
+@debug comparable($unit, $num);
+
+$hue: 350;
+$sat: 80%;
+$lum: 20%;
+$alpha: .3;
+
+$colors: hsla($hue, $sat, $lum, $alpha);
+$text: darken($colors, 5);
+
+%clearfix {
+	&::before, &::after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+}
+
+@mixin theme($bgc, $tc, $fs){
+	@if(unit($fs) != 'px' ){
+		@if(unit($fs) == 'em'){
+			@warn 'This value needs to be a em value';
+		}
+		@if(unit($fs) == 'vw'){
+			@warn 'This value needs to be a vw value';
+		}
+		@if(unit($fs) == '$unitless'){
+			@warn 'This value needs to be a unitless value';
+		}
+	}
+	@else {
+		background-color: $bgc;
+		color: $tc;
+		font-size: $fs;
+	}
+}
+
+body {
+	@include theme(black, pink, $unit);
+}
+
+
+// Directives:
+// @mixin - advanced placeholders (accepts arguments)
+// @media - media queries
+// @include - @mixin
+// @import - importing css stylesheet
+// @extend - %placeholders
+// @debug
+
+// @warn
+// @error
