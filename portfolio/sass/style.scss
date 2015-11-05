@@ -1,0 +1,113 @@
+@import "reset";
+@import "fontawesome";
+@import "variables";
+
+$dgblue: hsla(210, 100%, 56%, 1);
+
+/* sass goes here */
+
+// NAV styles start
+.navbar-default {
+	margin-bottom: 0;
+	background-color: lighten($dgblue, 35);
+	.navbar-name {
+		color: $black;
+		font-size: 3vw;
+	}
+	.collapse .navbar-collapse {
+		ul {
+			li {
+				a {
+					color: red;
+				}
+			}
+		}
+	}
+	
+}
+// NAV styles end
+
+// HEADER styles start
+header {
+	color: $white;
+	margin: 0;
+	background-color: $dgblue;
+	.pic {
+		text-align: center;
+		padding: 75px 0;
+		img {
+			border-radius: 50%;
+		}
+	}
+	h1 {
+		padding: 0;
+		font-size: 4em
+	}
+	.lt {
+		background-color: red;
+		width: 10px;
+		height: 10px;
+	}
+	p {
+		text-align: center;
+		padding: 20px 0 50px 0;
+		margin-bottom: 0;
+	}
+}
+// HEADER styles end
+
+// MAIN styles start
+main {
+	background-color: lighten($dgblue, 40);
+	margin: 0;
+}
+// MAIN styles end
+
+// ABOUT styles start
+.about {
+	background-color: $dgblue;
+	.text {
+		display: flex;
+	}
+	p {
+		flex-direction: coulmn;
+		padding: 0 45px;
+		text-align: center;
+	}
+}
+
+// ABOUT styles end
+
+// CONTACT styles start
+.contact {
+	background-color: lighten($dgblue, 40);
+	display: flex;
+	justify-content: center;
+	padding-top: 75px;
+	i {
+		color: $dgblue;
+
+	}
+	div {
+		text-align: center;
+		padding: 5px 20px;
+	}
+}
+// CONTACT styles end
+@media screen and (max-width: 750px) {
+	.about {
+		.text {
+			display: inline;
+			padding: 20px;
+		}
+	}
+}
+@media screen and (max-width: 750px) {
+	.content {
+			div {
+				display: inline;
+			}
+	}
+}
+
+
