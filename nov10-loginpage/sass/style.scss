@@ -1,0 +1,47 @@
+@import "reset";
+@import "fontawesome";
+@import "variables";
+
+/* sass goes here */
+
+html, body {
+	height: 100%;
+}
+body {
+	font-size: 100%;
+	background-color: lighten(dodgerblue, 30);
+}
+main {
+	display: flex;
+	justify-content: center;
+}
+#loginBox {
+	background-color: lighten(pink, 5);
+	padding: 20px;
+	width: 300px;
+	border-radius: 5px;
+	margin: 75px auto;
+	form {
+		display: flex;
+		flex-direction: column;
+		.button{
+			align-self: flex-start;
+			background-color: dodgerblue;
+			&:hover {
+				background-color: black;
+				color: dodgerblue;
+			}
+		}
+		label {
+			display: flex;
+			flex-direction: column;
+		}
+		input {
+			font-size: 1.25em;
+			margin: 5px;
+			border: 2px solid lightgray;
+			border-radius: 5px;
+			background-color: lighten(lightgray, 12);
+		}
+	}
+}

@@ -1,0 +1,98 @@
+@import "reset";
+@import "fontawesome";
+@import "variables";
+
+/* sass goes here */
+
+
+html, body {
+	height: 100%;
+	font-size: 100%;
+	font-family: sans-serif;
+	font-weight: 200;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+body {
+	flex-direction: column;
+}
+main {
+	height: 100%;
+	padding: 10vw 5vw;
+	div {
+		display: flex;
+		p:last-child{
+			color: red;
+		}
+	}
+}
+textarea {
+	font-size: 1.5em;
+}
+
+.cta {
+	height: 35vw;
+	width: 1005;
+	background: {
+		image: url('https://unsplash.it/350/350?random');
+		size: cover;
+		position: center;
+	}
+}
+footer {
+	background-color: darkgray;
+	color: whte;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// html, body {
+// 	height: 100%;
+// 	font-size: 100%;
+// 	font-family: sans-serif;
+// 	font-weight: 200;
+// 	display: flex;
+// 	justify-content: center;
+// 	align-items: center;
+// }
+// body {
+// 	flex-direction: column;
+// }
+// main {
+// 	height: 100%;
+// 	padding: 10vw 5vw;
+// }
+// .cta {
+// 	height: 35vw;
+// 	width: 1005;
+// 	// background: {
+// 	// 	image: url('https://unsplash.it/350/350?random');
+// 	// 	size: cover;
+// 	// 	position: center;
+// 	// }
+// }
+// footer {
+// 	background-color: darkgray;
+// 	color: whte;
+// }
