@@ -47,13 +47,27 @@
 		}
 	}
 
+	window.addEventListener('resize', checkDims);
 
-	function colorChange(){
-		var cH = document.documentElement.clientHeight;
-		var sH = document.documentElement.scrollHeight;
-		console.log(Math.round(sH / cH));
-	}
-	colorChange();
+		function scrollFunc(evt){
+			//fixNav(); //currently already exists in scrollFunc()
+			colorChange();
+		}
+
+		var docH = 0;
+		function checkDims(){
+			docH = document.documentElement.scrollHeight;
+		}
+		checkDims();
+
+		function colorChange(){
+			var winH = window.innerHeight;
+			var scrollDist = window.scrollY;
+			var degreeCon = Math.ceil( (360 / (docH - winH)) * 100) / 100;
+			var hue = Math.round(degreeCon * scrollDist);
+			bodyObj.style.backgroundColor = 'hsla('+hue+', 30%, 50%, 1)';
+			console.log(hue);
+		}
 })();
 
 // console.log(document.documentElement.clientWidth);
