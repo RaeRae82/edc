@@ -12,7 +12,7 @@ submitBtn.addEventListener('click', function(){
 	getName(val);
 	getColor(valColor);
 	myDate(boxDate);
-});
+});gulp
 
 function getName(x){
 	var resp = parseInt(x);

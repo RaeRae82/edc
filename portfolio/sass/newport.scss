@@ -1,0 +1,46 @@
+@import "reset";
+@import "fontawesome";
+@import "variables";
+@import url(https://fonts.googleapis.com/css?family=Architects+Daughter|Dancing+Script);
+
+$mtgrn: hsla(180, 100%, 63%, 1);
+$teal: hsla(179, 95%, 17%, 1);
+$litblue: hsla(199, 69%, 64%, 1);
+$medpurple: hsla(240, 19%, 31%, 1);
+$brtviot: hsla(242, 82%, 71%,1);
+
+// GLOBAL styles start
+
+// GLOBAL styles end
+// NAV styles start
+.navbar-default {
+	margin-bottom: 0;
+	background-color: $teal;
+	.navbar-name {
+		margin-left: 15px;
+		color: $mtgrn;
+		font-family: 'Dancing Script', cursive;
+		font-size: 2.5em;
+	}
+	.navbar-nav {
+		li {
+			line-height: 30px;
+			a {
+				padding: 0 auto;
+				display: inline;
+				font-size: 1.2em;
+				color: $mtgrn;
+				&:hover {
+					color: $brtviot;
+				}
+			}
+		}
+	}
+	
+}
+// NAV styles end
+// HEADER stles start
+header {
+	background-color: $litblue;
+}
+// HEADER stles end
