@@ -1,1 +1,1 @@
-/* put your javascript here */
+/* js goes here */
