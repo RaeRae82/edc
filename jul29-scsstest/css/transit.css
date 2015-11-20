@@ -1,0 +1,31 @@
+main {
+  background-image: url("../img/mtNrf7oxS4uSxTzMBWfQ_DSC_0043.jpg");
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+  height: 500px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  color: white;
+  text-align: center;
+  padding: 40px;
+}
+main header {
+  float: right;
+  display: inline-block;
+}
+main h1 {
+  font-size: 350%;
+}
+main p {
+  font-size: 200%;
+}
+main a {
+  color: gray;
+  padding: 10px;
+  font-size: 150%;
+}
+
+main > a {
+  color: white;
+}

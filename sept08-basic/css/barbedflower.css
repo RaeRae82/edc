@@ -1,0 +1,153 @@
+body {
+  font-family: 'Varela', sans-serif;
+}
+
+header {
+  color: white;
+  padding: 20px 50px 50px 30px;
+  background-color: #b11642;
+}
+header h2 {
+  margin-top: 0;
+  padding-right: 50px;
+}
+header nav {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px;
+}
+header .head {
+  margin-top: 75px;
+  font-size: 30px;
+  text-align: center;
+  padding-bottom: 50px;
+}
+header .head h1 {
+  margin-bottom: 0;
+}
+header .head p {
+  margin-top: 0;
+  margin-bottom: 75px;
+}
+header .head a {
+  background-color: #dc562e;
+  padding: 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 20px;
+}
+header a {
+  color: white;
+}
+
+article {
+  color: #8c8c8c;
+  font-size: 30px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 100px;
+}
+article h1 {
+  padding-top: 50px;
+  margin-bottom: 0;
+  color: #404040;
+}
+article h3 {
+  font-size: 20px;
+  margin-top: 0;
+}
+article p {
+  font-size: 20px;
+  padding: 30px;
+}
+article a {
+  color: white;
+  font-size: 20px;
+  padding: 20px 30px;
+  background-color: #b11642;
+  border-radius: 5px;
+  text-decoration: none;
+  letter-spacing: 5px;
+}
+
+.pic {
+  color: #bfbfbf;
+  font-size: 30px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #b11642;
+  padding: 75px;
+}
+.pic img {
+  margin: 50px;
+  border-radius: 5px;
+}
+.pic h2 {
+  margin-bottom: 0;
+  color: white;
+}
+.pic h3 {
+  margin-top: 0;
+  font-size: 25px;
+}
+.pic a {
+  color: #b11642;
+  background-color: white;
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 20px;
+  letter-spacing: 5px;
+  text-decoration: none;
+}
+.pic p {
+  padding-bottom: 50px;
+  font-size: 20px;
+  margin-top: 40px;
+}
+
+.info {
+  color: #737373;
+  text-align: center;
+  margin: 50px;
+  font-size: 30px;
+}
+.info h2 {
+  color: #404040;
+}
+.info h3 {
+  font-size: 20px;
+}
+.info p {
+  border: 1px solid #e6e6e6;
+  padding: 50px 30px;
+  border-radius: 5px;
+  width: 320px;
+  font-size: 20px;
+}
+.info a {
+  color: white;
+  font-size: 20px;
+  letter-spacing: 5px;
+  padding: 20px 30px;
+  background-color: #b11642;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.info .col-3 {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 50px;
+}
+.info .col-3 div {
+  padding: 10px;
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  color: #bfbfbf;
+  padding: 50px;
+  background-color: #404040;
+}

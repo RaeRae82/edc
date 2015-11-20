@@ -1,0 +1,79 @@
+// section {
+// 	&#featured div {
+// 		box-sizing: border-box;
+// 		width: (100%/3);
+// 		padding: 50px;
+// 		background-color: $white-lighter;
+// 	}
+// 	&#agency div {
+// 		width: (100%/3);
+// 		height: 30vw;
+// 		background-position: center;
+// 		background-size: cover;
+// 	}
+// }
+
+// @for $i from 1 through 6 {
+// 	nav li:nth-of-type(#{$i}):hover,
+// 	section#featured div:nth-of-type(#{$i}):hover{
+// 		background-color: hsla(random(360), 30%, 80%, 1);
+// 	}
+// }
+
+// $angencies: angie brianne claire franklin gary genie jacob jonathan phillip rebecca shaun tessa;
+// @each $agency in $angencies {
+// 	$i: index($angencies, $agency);
+// 	#agency div:nth-of-type(#{$i}) {
+// 		background-image: url("../img/agency-#{agency}.jpg");
+// 	}
+// }
+// $intros: hero featured agency;
+// @each $intro in $intros {
+// 	$i: index($intros, $intro);
+// 	.intro:nth-of-type(#{$i}) {
+// 		background-image: url("../img/intro-#{$intro}.jpg");
+// 	}
+// }
+
+
+
+
+
+
+
+
+
+
+$intros: hero featured agency;
+@each $intro in $intros {
+	$i: index($intros, $intro);
+	.intro:nth-of-type(#{$i}) {
+		background-image: url("../img/intro-#{$intro}.jpg");
+	}
+}
+
+#featured {
+	display: flex;
+	justify-content: sapce-around;
+	div {
+		width: 30%;
+		margin: 5px;
+		padding: 5px;
+	}
+}
+
+$agencies: angie brianne claire franklin gary genie jacob jonathan phillip rebecca shaun tessa;
+@each $agency in $agencies {
+	$i: index($agencies, $agency);
+	#agency div:nth-of-type(#{$i}) {
+		background-image: url("../img/agency-#{$agency}.jpg"); 	
+		width: (100%/3);
+		height: 30vw;
+		background-size: cover;
+	}
+}
+#agency div {
+	width: 200px;
+	height: 200px;
+
+}

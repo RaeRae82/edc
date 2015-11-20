@@ -1,0 +1,64 @@
+section {
+	position: relative;
+
+}
+div {
+	position: absolute;
+	border-width: 20px;
+
+
+}
+
+#side1 {
+	width: 45px;
+	height: 175px;
+	/*border-width: 35px;
+	/*border-style: solid;
+	/*border-color: green;*/
+	background-color: green;
+	top: 177px;
+	left: 225px;
+	transform: rotate(30deg);
+}
+#side2 {
+	width: 45px;
+	height: 175px;
+	/*border-width: 35px;*/
+	/*border-style: solid;*/
+	/*border-color: yellow;*/
+	background-color: yellow;
+	top: 126px;
+	left: 355px;
+	transform: rotate(-40deg);
+}
+#side3 {
+	width: 45px;
+	height: 180px;
+	/*border-width: 35px;*/
+	/*border-style: solid;*/
+	/*border-color: blue;*/
+	background-color: blue;
+	top: 239px;
+	left: 291px;
+	transform: rotate(90deg);
+}
+#angle1 {
+	width: 40px;
+	height: 40px;
+	background-color: purple;
+
+
+}
+#angle2 {
+	width: 40px;
+	height: 40px;
+	background-color: orange;
+	top: 50px
+}
+#angle3 {
+	width: 40px;
+	height: 40px;
+	background-color: red;
+	top: 50px;
+	left: 50px;
+}

@@ -1,0 +1,146 @@
+@import "reset";
+@import "fontawesome";
+@import "variables";
+
+/* sass goes here */
+// HEADER styles start
+header {
+	background: {
+	image: url("../img/header-bg.jpg");
+	size: cover;
+	position: center;
+	repeat: no-repeat;
+	}
+	.nav {
+		display: flex;
+		h3 {
+			padding: 20px 10px;
+			margin-left: 15px;
+			font-size: 2em;
+			flex: 2;
+		}
+		nav {
+			margin-top: 10px;
+		ul{
+			display: inline-flex;
+			li {
+				padding: 20px 30px;
+				.btn-active {
+					display: inline-block;
+					background-color: $drkgray;
+					color: white;
+					padding: 10px 25px;
+					border-radius: 5px;
+					&:hover {
+					background-color: $orange;
+					}
+				}
+				a {
+					color: $drkgray;
+				}
+				.arrow-down {
+					margin: 10px auto;
+					width: 0;
+					height: 0;
+					border-left: 10px solid transparent;
+					border-right: 10px solid transparent;
+					border-top: 10px solid $orange;
+				}
+				}
+			}
+		}
+	}
+		
+}
+.heading {
+	margin: 80px auto;
+	padding: 100px 0 200px;
+	widows: 100%;
+	display: block;
+	text-align: center;
+	h1 {
+		font-size: 3em;
+		margin-bottom: 0;
+	}
+	h2 {
+		font-size: 2em;
+		font-weight: 300;
+		margin-bottom: 50px;
+		
+	}
+	.btn {
+		color: white;
+		padding: 20px;
+		display: inline-block;
+		background-color: $orange;
+		margin-bottom: 100px;
+		border-radius: 5px;
+		&:hover {
+			background-color: $drkgray;
+		}
+		
+	}
+}
+// HEADER styles end
+
+// SECTION styles start
+section {
+	.features {
+		display: flex;
+		justify-content: center;
+		padding: 75px 30px;
+		text-align: center;
+		div {
+			width: 25%;
+			i {
+				background-color: hsla(0, 0%, 95%, 1);
+				border: 3px solid hsla(0, 0%, 92%, 1);
+				width: 45px;
+				height: 60px;
+				border-radius: 50%;
+				padding: 25px;
+				color: $orange;
+				text-align: center;
+			}
+			h3 {
+				padding-top: 25px;
+				color: hsla(0, 0%, 35%, 1);
+				font-weight: 300;
+			}
+		}
+	}
+	h1 {
+		text-align: center;
+		color: $orange;
+		font-size: 3em;
+	}
+}
+// SECTION styles end
+
+// MAIN styles start
+main {
+	div {
+		display: flex;
+		flex-wrap: wrap;
+		color: white;
+		img {
+			flex: 1;
+		}
+		p {
+			text-align: center;
+			flex: 1;
+			color: white;
+			margin: auto 0;
+			height: 256px;
+			width: 219px;
+			background-color: gray;
+			line-height: 250px;
+		}
+		.arrow {
+		width: 1px;
+		height: 5px;
+		display: inline;
+		}
+	}
+}
+// MAIN styles end

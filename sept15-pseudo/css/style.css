@@ -1,0 +1,139 @@
+/* put your scss here */
+.bubble {
+  background-color: #d9eef2;
+  padding: 40px;
+  margin: 20px;
+  border-radius: 200px;
+  font-size: 24px;
+  text-align: center;
+  font-style: sans-serif;
+  color: purple;
+  position: relative;
+}
+.bubble::before {
+  content: "";
+  display: block;
+  border-width: 0px 30px 30px 30px;
+  border-style: solid;
+  border-color: transparent #d9eef2 transparent transparent;
+  position: absolute;
+  top: 100%;
+  left: 60%;
+}
+
+.phone {
+  width: 300px;
+  height: 595px;
+  border: 2px solid #171717;
+  border-radius: 20px;
+  position: relative;
+}
+.phone::before {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 4px;
+  border: 2px solid #171717;
+  border-radius: 4px;
+  position: absolute;
+  left: calc(50% - 28px);
+  top: 20px;
+}
+.phone::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #171717;
+  position: absolute;
+  left: calc(50% - 20px);
+  bottom: 5px;
+}
+.phone .screen {
+  width: 280px;
+  height: 495px;
+  background-color: #171717;
+  background-image: url(http://3.bp.blogspot.com/-HjPyg6f3Hcc/UPXBT3TV5PI/AAAAAAAABe4/aiqDv75CpF4/s1600/Samsung+Galaxy+Nexus+Screenshots+-+02+-+02+-+Daily.png);
+  background-size: 100%;
+  margin: 50px 10px;
+}
+
+ul {
+  background-color: #eddede;
+}
+ul li {
+  background-color: #c99cc9;
+  float: left;
+  list-style: none;
+}
+ul::before, ul::after {
+  content: "";
+  display: block;
+  clear: both;
+  height: 3px;
+  background-color: red;
+}
+
+.clock {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 5px solid purple;
+  position: relative;
+  background-color: yellow;
+}
+.clock::before {
+  content: "";
+  display: block;
+  border-radius: 10%;
+  border: 5px solid pink;
+  background-color: pink;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  width: 1px;
+  height: 45px;
+  left: 117px;
+  top: 45px;
+  position: absolute;
+}
+.clock::after {
+  content: "";
+  display: block;
+  border-radius: 10%;
+  border: 5px solid red;
+  background-color: red;
+  width: 1px;
+  height: 60px;
+  left: 95px;
+  top: 103px;
+  position: absolute;
+}
+.clock .center {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  border: 5px solid black;
+  left: 95px;
+  top: 90px;
+  position: absolute;
+  background-color: black;
+}
+.clock .noon {
+  position: absolute;
+  left: 90px;
+}
+.clock .three {
+  position: absolute;
+  left: 190px;
+  top: 90px;
+}
+.clock .six {
+  position: absolute;
+  left: 95px;
+  bottom: -2px;
+}
+.clock .nine {
+  position: absolute;
+  bottom: 90px;
+}

@@ -1,0 +1,45 @@
+body {
+	background-color: hsl(0, 0%, 80%);
+}
+form {
+	border: 2px solid hsl(0, 0%, 70%);
+	width: 320px;
+	height: 195px;
+	display: block;
+	margin: 215px auto;
+	background-color: hsl(0, 0%, 92%);
+	border-radius: 5px;
+	padding-left: 20px;
+	
+
+}
+a {
+	border: 2px solid hsl(210, 100%, 35%);
+	background-color: hsl(210, 100%, 35%);
+	color: white;
+	text-decoration: none;
+	display: block;
+	margin-top: 10px;
+	text-align: center;
+	border-radius: 5px;
+	padding: 5px;
+	width: 275px;
+
+}
+label {
+	display: block;
+	padding: 10px;
+	color: gray;
+
+
+	
+}
+input {
+	color: gray;
+	width: 275px;
+	display: block;
+	border-radius: 5px;
+	padding: 5px;
+	border: 2px solid hsl(0, 0%, 70%);
+
+}

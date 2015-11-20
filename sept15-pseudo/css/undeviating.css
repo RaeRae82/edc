@@ -1,0 +1,148 @@
+body {
+  font-family: 'Questrial', sans-serif;
+  font-weight: 400;
+}
+
+header {
+  color: white;
+  background-color: #2056ac;
+  padding-top: 75px;
+}
+header div {
+  text-align: center;
+}
+header h1 {
+  text-align: center;
+  padding-top: 75px;
+  font-size: 60px;
+  font-weight: 400;
+}
+header ul {
+  text-align: center;
+}
+header li {
+  list-style: none;
+  display: inline-block;
+  padding-bottom: 15px;
+}
+header li:hover {
+  background-color: white;
+}
+header a {
+  text-decoration: none;
+  color: white;
+  padding: 20px;
+  font-size: 20px;
+}
+header a:hover {
+  color: #2056ac;
+}
+
+section {
+  margin: 50px;
+}
+section img {
+  background-size: 100%;
+  background-size: cover;
+}
+section .heading {
+  margin-bottom: 100px;
+}
+section .heading h2 {
+  color: #404040;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 400;
+}
+section .heading p {
+  color: #595959;
+  text-align: center;
+  margin: 0 25px;
+  line-height: 40px;
+}
+section .heading a {
+  color: #2056ac;
+}
+
+article {
+  text-align: center;
+}
+article p {
+  margin-bottom: 60px;
+  color: #666666;
+}
+article div {
+  padding: 10px;
+}
+article h3, article h4 {
+  color: #404040;
+}
+article .col-3 {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 50px;
+  border-top: 1px solid #d9d9d9;
+  margin: 0 75px;
+}
+article .col-4 {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 50px;
+  border-top: 1px solid #d9d9d9;
+  margin: 0 75px;
+}
+article a {
+  background-color: #66acd1;
+  padding: 15px;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.contact {
+  background-color: #e2f1f8;
+  margin: 0 auto;
+  color: #666666;
+}
+.contact::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.contact div {
+  float: left;
+  padding: 50px;
+  text-align: center;
+  margin: 20px;
+}
+.contact div i {
+  position: center;
+}
+
+footer {
+  background-color: #2056ac;
+  margin-right: 0 auto;
+}
+footer p {
+  text-align: center;
+  color: #66acd1;
+  padding: 30px;
+  padding-top: 40px;
+  margin-top: 0;
+}
+footer p a {
+  color: #286bd7;
+}
+footer i {
+  background-color: #93b5eb;
+  color: white;
+  padding: 5px;
+  height: 40px;
+  width: 40px;
+}
+footer div {
+  text-align: center;
+  padding: 15px;
+}

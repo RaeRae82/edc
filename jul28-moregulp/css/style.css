@@ -1,0 +1,85 @@
+/*put your scss here*/
+main::before, main::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.bubble, .post, .rightcol {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+body {
+  background-color: teal;
+  font-family: Helvetica, Arial, sans-serif;
+  margin: 0;
+}
+
+ol, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+aside {
+  width: 200px;
+  float: left;
+  padding: 0 20px;
+}
+
+article {
+  width: calc( 100% - 400px );
+  float: left;
+  padding: 0 40px;
+}
+
+h1 {
+  color: #00e6e6;
+}
+
+h2 {
+  color: #004d4d;
+}
+
+header {
+  background-image: url(https://img0.etsystatic.com/000/0/5502191/il_fullxfull.313193668.jpg);
+  background-size: 100%;
+  background-attachment: fixed;
+  padding: 40px 20px 20px;
+}
+header h1, header h2 {
+  margin: 0;
+}
+header h2 {
+  text-transform: uppercase;
+  font-size: 80%;
+}
+
+.post {
+  border-bottom: 3px solid #00e6e6;
+  border-top: 1px solid black;
+}
+.post:first-child {
+  border-top: none;
+}
+.post:last-child {
+  border-bottom: none;
+}
+
+footer {
+  background-color: #004d4d;
+  padding: 40px 20px;
+}
+footer h3 {
+  margin: 0;
+}
+footer a {
+  color: white;
+  text-decoration: none;
+}

@@ -1,0 +1,21 @@
+body {
+	display: flex;
+}
+
+div {
+	width: 30%;
+	height: 30vw;
+}
+
+@for $i from 1 through 3 {
+	div:nth-of-type(#{$i})::before {
+		// content: "#{$i}";
+	}
+}
+$fruits: apple banana orange;
+@each $fruit in $fruits {
+	$i: index($fruits, $fruit);
+	div:nth-of-type(#{$i})::before{
+		content: "#{$fruit}";
+	}
+}

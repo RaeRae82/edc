@@ -1,0 +1,65 @@
+/* put your scss answers here */
+ol {
+	display: flex;
+	flex-wrap: wrap;
+	align-content: sapce-around;
+	justify-content: center;
+}
+li {
+	counter-increment: step-counter;
+}
+li:before {
+	content: counter(step-counter);
+}
+
+// $hue-val: (360/40);
+// @for $i from 1 through 40 {
+// 	$hue: ($hue-val*$i);
+// 	li:nth-of-type(#{$i}){
+// 		&:hover {
+// 			background-image: linear-gradiant(to top, hsl($hue, 30%,60%), hsl($hue, 30%, 80%));
+// 		}
+// 		&::before {
+// 			content: '#{$i}';
+// 		}
+// 	}
+// }
+
+li{
+	@for $i from 1 through 40 {
+		$deg: $i*9;
+		$bg-clr: hsla($deg, 50%, 50%, 1);
+		&:nth-of-type(#{$i}):hover{
+			background-image: none;
+			background-color: lighten($bg-clr, 15);
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+$red: hsl(0, 75%, 65%);
+$orange: hsl(40, 80%, 55%);
+$yellow: hsl(60, 90%, 70%);
+$green: hsl(105, 70%, 65%);
+$blue: hsl(200, 75%, 65%);
+$purple: hsl(280, 75%, 65%);
+
+$color-list: $red $orange $yellow $green $blue $purple;
+
+@each $current-color in $color-list {
+	$i: index($color-list, $current-color);
+	li:nth-of-type(#{$i}){
+		background-image: none;
+		background-color: $current-color;
+	}
+}

@@ -1,0 +1,162 @@
+$litgreen: hsla(200, 60%, 93%, 1);
+$blue: hsla(217, 69%, 40%, 1);
+$litblue: hsla(201, 54%, 61%, 1);
+$gray: hsla(0, 0%, 25%, 1);
+$litgray: lighten($gray, 15);
+$white: hsla(0, 100%, 100%, 1);
+
+// html {
+// 	width: 100%;
+// }
+body {
+	font-family: 'Questrial', sans-serif;
+	font-weight: 400;
+}
+
+header {
+	color: $white;
+	background-color: hsla(217, 69%, 40%, 1);
+	padding-top: 75px;
+	div {
+		text-align: center;
+	}
+	h1 {
+		text-align: center;
+		padding-top: 75px;
+		font-size: 60px;
+		font-weight: 400;
+	}
+	ul {
+		text-align: center;
+	}
+	li {
+		list-style: none;
+		display: inline-block;
+		padding-bottom: 15px;
+		&:hover {
+			background-color: $white;
+		}
+	}
+	a {
+		text-decoration: none;
+		color: $white;
+		padding: 20px;
+		font-size: 20px;
+		&:hover {
+			color: $blue;
+		}
+	}
+}
+
+section {
+	margin: 50px;
+	img {
+		background-size: 100%;
+		background-size: cover;
+	}
+	.heading {
+		margin-bottom: 100px;
+		h2 {
+			color: $gray;
+			text-align: center;
+			font-size: 40px;
+			font-weight: 400;
+		}
+		p {
+			color: lighten($gray, 10);
+			text-align: center;
+			margin: 0 25px;
+			line-height: 40px;
+		}
+		a {
+			color: $blue;
+		}
+	}
+}
+article {
+	text-align: center;
+	p {
+		margin-bottom: 60px;
+		color: $litgray;
+	}
+	div {
+		padding: 10px;
+	}
+	h3, h4 {
+		color: $gray;
+	}
+	.col-3 {
+		display: flex;
+		padding: 50px;
+		border-top: 1px solid lighten($gray, 60);
+		margin: 0 75px;
+	}
+	.col-4 {
+		display: flex;
+		padding: 50px;
+		border-top: 1px solid lighten($gray, 60);
+		margin: 0 75px;
+	}
+	a {
+		background-color: $litblue;
+		padding: 15px;
+		color: $white;
+		text-decoration: none;
+		font-size: 20px;
+	}
+}
+.contact {
+	background-color: $litgreen;
+	margin: 0 auto;
+	color: $litgray;
+	&::after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+	div {
+		float: left;
+		padding: 50px;
+		text-align: center;
+		margin: 20px;
+		i {
+			position: center;
+		}
+	}
+}
+footer {
+	background-color: $blue;
+	margin-right: 0 auto;
+	p {
+		text-align: center;
+		color: $litblue;
+		padding: 30px;
+		padding-top: 40px;
+		margin-top: 0;
+		a {
+			color: lighten($blue, 10);
+		}
+	}
+	i {
+		background-color: lighten($blue, 35);
+		color: $white;
+		padding: 5px;
+		height: 40px;
+		width: 40px;
+	}
+	div {
+		text-align: center;
+		padding: 15px;
+	}
+
+
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,43 @@
+@import "reset";
+@import "fontawesome";
+@import "variables";
+
+/* sass goes here */
+
+	// PROJECT#1
+// html, body {
+// 	height: 100%;
+// }
+
+
+
+	// PROJECT #2
+main {
+	display: inline-block;
+}
+form {
+	background-color: lightblue;
+	border: 2px dashed purple;
+	text-align: center;
+	padding: 5px;
+	div {
+		padding: 5px;
+		&:last-of-type{
+			input:hover{
+				color: dodgerblue;
+				background-color: black;
+			}
+		}
+		&:nth-of-type(2){
+			input {
+				width: 375px;
+			}
+		}
+	}
+	label {
+		input {
+		width: 51px;
+
+		}
+	}
+}

@@ -1,0 +1,78 @@
+@import "reset";
+@import "fontawesome";
+@import "variables";
+
+/* sass goes here */
+
+
+$white: hsla(0, 0%, 96%, 1);
+$black: hsla(0, 0%, 9%, 1);
+body {
+	background-color: $white;
+	color: $black;
+	padding: 10vw 5vw;
+}
+
+header {
+	background-color: $black;
+	color: $white;
+	nav {
+		display: flex;
+		img {
+			transition: all 4000ms ease-in-out;
+		}
+		h1 {
+			display: inherit;
+			margin: 0 auto 0 0;
+			a {
+				display: inherit;
+				align-items: center;
+				padding: 10px;
+			}
+		}
+		ul {
+			display: inherit;
+			li {
+				display: inherit;
+				a {
+				display: inherit;
+				align-items: center;
+				padding: 10px;
+				}
+			}
+		}
+	}
+	&.fixie {
+		position: fixed;
+		width: 100%;
+		top: 0;
+		left: 0;
+		img {
+			width: 85px;
+			height: 85px;
+			animation: wiggle 400ms 2;
+			transform: rotate(360deg);
+		}
+	}
+}
+
+
+main {
+	background-color: darken($white, 5);
+	padding: inherit;
+}
+@keyframes wiggle{
+	25% {
+		transform: rotate(10deg);
+	}
+	50% {
+		transform: rotate(-10deg);
+	}
+	75% {
+		transform: rotate(10deg);
+	}
+	100% {
+		transform: rotate(-10deg);
+	}
+
+}

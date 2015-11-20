@@ -1,0 +1,119 @@
+/* put your scss here */
+
+/*
+@import is for importing partial e.g.: _*.scss
+@extend is for inheriting from placeholder e.g.: %*{}
+@include is for mixins e.g.: @mixin *($x, $y, $z){}
+*/
+
+$color-blue: hsla(200, 50%, 60%, 1);
+$color-black: hsla(0, 0%, 8%, 1);
+$color-white: hsla(0, 0%, 92%, 1);
+$color-gray: hsla(0, 0%, 90%, 1);
+
+@import "answers"; //this is my partial
+
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+body {
+	font-family: sans-serif;
+	margin: 0;
+}
+ol, ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	a {
+		color: $color-black;
+	}
+}
+a {
+	text-decoration: none;
+	color: $color-white;
+}
+h1 {
+	font-size: 24px;
+	line-height: 38px;
+	margin: 0;
+}
+
+header {
+	@extend %clearfix;
+	//@extend %background;
+	@include background-mixin(yellow, green, 10px);
+	margin-bottom: 40px;
+}
+article {
+	// @extend %background;
+	@include background-mixin(red, purple, 50px);
+	margin: 20px 0;
+}
+footer {
+	@extend %background;
+	margin-top: 40px;
+}
+
+.btn {
+	&.btn-1 {
+		@include btn-basics(1px, 16px);
+	}
+	&.btn-2 {
+		@include btn-basics(2px, 20px);
+	}
+	&.btn-3 {
+		@include btn-basics(3px, 24px);
+	}
+	&.btn-4 {
+		@include btn-basics(4px, 28px);
+	}
+}
+
+blockquote {
+	border: {
+		color: red;
+		width: 5px;
+		style: solid;
+	}
+	font: {
+		family: Helvetica, Arial, sans-serif;
+		size: 25px;
+		weight:100;
+		style: italic;
+		variant: small-caps
+	}
+	background: {
+		position: center;
+		image: url("http://placehold.ir/250x250");
+		size: cover;
+		repeat: no-repeat;
+		attachment: fixed;
+	}
+}
+
+nav {
+	a {
+		float: left;
+		color: $color-black;
+	}
+	ul {
+		float: right;
+		li {
+			display: inline-block;
+			line-height: 38px;
+		}
+	}
+}
+
+header, main {
+	padding: 0 10%;
+}
+footer h1 {
+	@include footer-mixin(orange, 40px)
+}
+
+
+
+
+// @include btn-basics(1px, 16px);
+

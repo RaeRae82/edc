@@ -1,0 +1,120 @@
+a {
+	color: hsla(347, 70%, 53%, 1);
+	text-decoration: underline;
+}
+.btn-clearcut {
+	color: hsla(0, 0%, 100%, 1);
+	text-decoration: none;
+	background-color:  hsla(347, 70%, 53%, 1);
+	border-color: darken(hsla(347, 70%, 53%, 1), 10);
+	&:hover {
+		color: hsla(0, 0%, 100%, 1);
+		background-color: lighten(hsla(347, 70%, 53%, 1), 10);
+	}
+}
+.content {
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+.hero {
+	height: 440px;
+	background: {
+		image: url("../img/banner.jpg");
+		position: center;
+		repeat: no-repeat;
+		size: cover;
+	}
+}
+.hero-header {
+	background-color: hsla(0, 0%, 93%, 1);
+	padding: 40px 0;
+	text-align: center;
+}
+.navbar {
+	margin-bottom: 0;
+	border: none;
+	padding: 20px 0;
+}
+.navbar-default {
+	background-color: hsla(0, 0%, 100%, 1);
+}
+#welcome, #lists {
+	ul{
+		padding: 0;
+		margin: 0;
+	}
+	li {
+		list-style: none;
+		border-bottom: 1px solid hsla(0, 0%, 90%, 1);
+		padding: 12px 0;
+		&::before {
+			content: "\e013";
+			display: inline-block;
+			width: 24px;
+			height: 24px;
+			margin-right: 5px;
+			text-align: center;
+			line-height: 24px;
+			background-color: hsla(347, 70%, 53%, 1);
+			color: hsla(0, 0%, 100%, 1);
+			font: {
+				family: 'Glyphicons Halflings';
+				size: 18px;
+				weight: normal;
+				style: normal;
+			}
+			text-decoration: none;
+			-webkit-text-rendering: optimizeLeginility;
+				-moz-text-rendering: optimizeLeginility;
+				-ms-text-rendering: optimizeLeginility;
+				-o-text-rendering: optimizeLeginility;
+				text-rendering: optimizeLeginility;
+			-webkit-font-smoothing: antialiassed;
+				-moz-font-smoothing: antialiassed;
+				-ms-font-smoothing: antialiassed;
+				-o-font-smoothing: antialiassed;
+				font-smoothing: antialiassed;
+		}
+}
+#welcome {
+	h2 {
+		font-size: 125%;
+	}
+	h3 {
+		margin-top: 0;
+		margin-bottom: 50px;
+		font-size: 110%;
+	}
+	
+		a {
+			vertical-align: top;
+		}
+	}
+}
+#promo {
+	.content {
+		text-align: center;
+	} 
+	i {
+		display: inline-block;
+		width: 80px;
+		height: 80px;
+		line-height: 80px;
+		background-color: hsla(347, 70%, 53%, 1);
+		font-size: 30px;
+		color: hsla(0, 0%, 100%, 1);
+	}
+	h2 {
+		font-size: 125%;
+	}
+}
+#lists {
+	background-color: hsla(347, 70%, 53%, 1);
+	h2, a {
+		color: hsla(0, 0%, 100%, 1);
+	}
+	li::before {
+		background-color: hsla(0, 0%, 100%, 1);
+		color: hsla(347, 70%, 53%, 1);
+	}
+}

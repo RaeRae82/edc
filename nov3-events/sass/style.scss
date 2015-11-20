@@ -1,0 +1,119 @@
+@import "reset";
+@import "fontawesome";
+@import "variables";
+
+/* sass goes here */
+
+@for $i from 1 through 9{
+	$rand: random(360);
+	main div:nth-of-type(#{$i}){
+		background-color: hsla($rand, 40%, 60%, 1);
+	}
+}
+  
+
+
+body {
+	background-color: hsla(0, 0%, 96%, 1);
+}
+p, input {
+	background-color: hsla(0, 0%, 100%, 1);
+	border: 1px solid gray;
+	padding: 10px;
+	margin: 5vw;
+}
+h1 {
+	text-align: center;
+	margin: 5vw;
+}
+main {
+	width: 300px;
+	height: 300px;
+	background-color: pink;
+	margin: 50px auto;
+	position: relative;
+	span {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background-color: mediumpurple;
+		z-index: 1;
+	}
+	div {
+		position: absolute;
+		width: 100%;
+		height: 10px;
+		// background-color: black;
+		top: 50%;
+		z-index: 10;
+	}
+	div:nth-of-type(1) {
+		// background-color:  purple;
+		width: 45px;
+    	top: 100px;
+    	left: 0px;
+    	;
+	}
+	div:nth-of-type(2) {
+		// background-color:  red;
+		width: 10px;
+   		 height: 70px;
+    	top: 30px;
+    	left: 35px;
+    	;
+	}
+	div:nth-of-type(3) {
+		// background-color:  orange;
+		width: 74px;
+    	top: 20px;
+    	left: 35px;
+   		 
+	}
+	div:nth-of-type(4) {
+		// background-color:  green;
+		width: 10px;
+   		 top: 30px;
+   		 left: 99px;
+   		 height: 46px;
+   		 
+	}
+	div:nth-of-type(5) {
+		// background-color: yellow;
+		width: 75px;
+		top: 75px;
+		left: 99px;
+		;
+	}
+	div:nth-of-type(6) {
+		// background-color:  gray;
+	    width: 10px;
+    	height: 86px;
+    	top: 85px;
+    	left: 164px;
+    	
+	}
+	div:nth-of-type(7) {
+		// background-color:  blue;
+	    width: 72px;
+    	top: 171px;
+    	right: 64px;
+    	
+	}
+	div:nth-of-type(8) {
+		// background-color:  silver;
+	    width: 10px;
+    	height: 90px;
+    	top: 171px;
+    	right: 55px;
+    	
+	}
+	div:nth-of-type(9) {
+		// background-color:  pink;
+	    width: 64px;
+    	top: 261px;
+    	right: 1px;
+    	
+	}
+}

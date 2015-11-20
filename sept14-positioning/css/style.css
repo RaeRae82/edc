@@ -1,0 +1,60 @@
+/* put your scss here */
+body {
+  background-color: rgba(0, 0, 0, 0.25);
+  margin: 0;
+}
+
+div {
+  background-color: white;
+  width: 75vw;
+  height: 75vw;
+  margin: 50px auto;
+  position: relative;
+  border-radius: 15px;
+}
+div img {
+  width: 25%;
+  /* 20vw when using the calc */
+  height: auto;
+  position: absolute;
+}
+div .top-lt {
+  left: 0;
+  right: 0;
+}
+div .top-rt {
+  left: auto;
+  right: 0;
+}
+div .btm-lt {
+  left: 0;
+  bottom: 0;
+}
+div .btm-rt {
+  bottom: 0;
+  right: 0;
+}
+div .center {
+  left: 40%;
+  /* calc(50% - 10vw) this is another way to get the cat in the middle */
+  top: 30%;
+  /* calc(50% - 10vw) this is another way to get the cat in the middle */
+}
+div .cent-lt {
+  right: 0;
+  top: 40%;
+}
+div .cent-rt {
+  left: 0;
+  top: 40%;
+}
+
+div::after {
+  content: "";
+  display: block;
+  background-color: purple;
+  /* DONT KNOW THIS PART JUST SHOWING HOW IT WORKS */
+  height: 5px;
+  /* DONT KNOW THIS PART JUST SHOWING HOW IT WORKS */
+  clear: both;
+}

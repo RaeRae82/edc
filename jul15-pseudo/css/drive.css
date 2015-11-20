@@ -1,0 +1,45 @@
+section {
+	position: relative;
+
+}
+div {
+	
+	position: absolute;
+	border-width: 20px;
+	border-style: solid;
+
+}
+
+
+#ring1 {
+	width: 350px;
+	height: 250px;
+	border-color: black;
+	/*background-color: green;*/
+	border-radius: 100%;
+	position: absolute;
+	top: 130px;
+	left: 100px;
+}
+#ring2 {
+	width: 318px;
+	height: 120px;
+	border-color: black;
+	/*background-color: purple;*/
+	border-radius: 100%;
+	position: absolute;
+	top: 145px;
+	left: 115px;
+}
+#ring3 {
+	width: 85px;
+	height: 220px;
+	border-color: black;
+	/*background-color: blue;*/
+	border-radius: 100%;
+	top: 145px;
+	left: 230px;
+
+
+}
+

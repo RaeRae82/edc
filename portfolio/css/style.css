@@ -1,0 +1,126 @@
+@import url(https://fonts.googleapis.com/css?family=Architects+Daughter|Dancing+Script);
+body {
+  margin: 0;
+}
+
+ul, ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-top: 0;
+  text-align: center;
+}
+
+.icon {
+  text-align: center;
+  padding: 0;
+  width: auto;
+}
+
+h1 {
+  text-align: center;
+  padding: 75px 0 20px 0;
+}
+
+.fa-minus {
+  height: .5px;
+}
+
+/* sass goes here */
+body {
+  font-family: 'Architects Daughter', cursive;
+  font-size: 1.8em;
+}
+
+.navbar-default {
+  margin-bottom: 0;
+  background-color: #d1e8ff;
+}
+.navbar-default .navbar-name {
+  color: white;
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.5em;
+}
+.navbar-default .collapse .navbar-collapse ul li a {
+  color: red;
+}
+
+header {
+  color: white;
+  margin: 0;
+  background-color: #1f8fff;
+}
+header .pic {
+  text-align: center;
+  padding: 75px 0;
+}
+header .pic img {
+  border-radius: 50%;
+}
+header h1 {
+  padding: 0;
+  font-size: 4em;
+}
+header p {
+  text-align: center;
+  padding: 20px 0 50px 0;
+  margin-bottom: 0;
+}
+
+main {
+  background-color: #ebf5ff;
+  margin: 0;
+}
+
+.about {
+  background-color: #1f8fff;
+}
+.about .text {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.about p {
+  -webkit-flex-direction: coulmn;
+      -ms-flex-direction: coulmn;
+          flex-direction: coulmn;
+  padding: 0 45px;
+  text-align: center;
+}
+
+.contact {
+  background-color: #ebf5ff;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 75px;
+}
+.contact i {
+  color: #1f8fff;
+}
+.contact div {
+  text-align: center;
+  padding: 5px 20px;
+}
+
+@media screen and (max-width: 750px) {
+  .about .text {
+    display: inline;
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .content div {
+    display: inline;
+  }
+}

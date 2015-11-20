@@ -1,0 +1,102 @@
+/* put your scss here */
+@import url(http://fonts.googleapis.com/css?family=Indie+Flower);
+
+body {
+	background-color: red;
+}
+
+
+.navbar-default {
+	background-color: dodgerblue;
+	background-size: cover;
+	margin-bottom: 0;
+}
+h3 {
+	text-align: center;
+	font-family: 'Indie Flower', cursive;
+	font-size: 500%;
+	margin-top: 0;
+}
+.paws {
+	text-align: center;
+}
+i {
+	padding: 20px;
+}
+header {
+	border: 3px dashed purple;
+}
+
+section {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin-bottom: 75px;
+	padding-top: 20px;
+	div {
+		width: (100%/4);
+		padding: 30px;
+	}
+}
+
+section div {
+	@for $i from 1 through 4 {
+		$deg: random($i*90);
+		$bg-clr: hsla($deg, 50%, 50%, 1);
+		&:nth-of-type(#{$i}):hover{
+			background-image: none;
+			background-color: lighten($bg-clr, 30);
+		}
+	}
+}
+
+@media screen and (min-width: 1200px){
+	body {
+		background-color: red;
+		color: black;
+	}
+}
+@media screen and (max-width: 1250px){
+	body {
+		background-color: blue;
+		color: white;
+	}
+}
+@media screen and (max-width: 850px){
+	body {
+		background-color: orange;
+		color: black;
+	}
+}
+@media screen and (max-width: 600px){
+	body {
+		background-color: teal;
+		color: white;
+	}
+}
+
+
+
+
+
+
+$jps: pic1 pic2 pic3;
+@each $jp in $jps {
+	$i: index($jps, $jp);
+	main div:nth-of-type(#{$i}) {
+		background-image: url("../img/pic-#{$i}.jpg");
+		width: (100%/3);
+		height: 30vw;
+		background-size: cover;
+		background-position: center;
+	}
+}
+
+
+.pics div {
+	margin: 20px;
+	transition: 2s, 2s, 2s;
+}
+.pics div:hover {
+	transform: rotate(360deg);
+}

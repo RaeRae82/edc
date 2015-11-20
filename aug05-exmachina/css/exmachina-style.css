@@ -1,0 +1,106 @@
+/* put your scss here */
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700);
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+h1, h2, h3, h4 {
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 300%;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-size: 180%;
+  margin-bottom: 40px;
+}
+
+h3 {
+  font-size: 150%;
+  margin-top: 0;
+}
+
+h4 {
+  font-size: 120%;
+}
+
+a {
+  text-decoration: underline;
+  color: #e95a3a;
+}
+
+p {
+  line-height: 2;
+  font-weight: 300;
+}
+
+.content {
+  padding-top: 100px;
+  padding-bottom: 25px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+ul li {
+  border-bottom: 1px solid lightgray;
+  padding: 15px 0;
+}
+ul li:before, ul li:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+ul li img {
+  float: left;
+  margin-right: 15px;
+}
+
+.btn {
+  text-decoration: none;
+  border: none;
+}
+
+.btn-lg {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.btn-exmachina {
+  text-transform: uppercase;
+  margin-top: 30px;
+  color: #f2f2f2;
+  background-color: #e95a3a;
+  transition: all 250ms ease-in-out;
+}
+.btn-exmachina:hover {
+  color: #f2f2f2;
+  background-color: #d83b18;
+}
+
+.hero {
+  height: 350px;
+  background-image: url("../img/banner.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.row:first-of-type img {
+  width: 100%;
+}
+
+li:last-child {
+  border: none;
+}
+
+@media screen and (max-width: 768px) {
+  .row:first-of-type a {
+    display: block;
+  }
+}

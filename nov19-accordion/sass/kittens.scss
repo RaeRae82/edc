@@ -1,0 +1,52 @@
+@import "reset";
+@import "fontawesome";
+@import "variables";
+
+/* sass goes here */
+
+$litgray: hsla(0, 0%, 96%, 1);
+$white: hsla(0, 0%, 100%, 1);
+
+
+main {
+	margin: 20px auto;
+	width: 70vw;
+	height: 100vw;
+	background-color: darken($litgray, 10);
+	border-radius: 4px;
+	position: relative;
+	h1 {
+		margin-left: 20px;
+		padding-top: 10px;
+	}
+	div {
+		margin: 0 auto;
+		width: 350px;
+		height: 300px;
+		background-color: $white;
+		border: 1px solid darken($litgray, 20);
+		border-radius: 4px;
+	}
+	label, button {
+		margin-left: 20px;
+	}
+	input {
+		margin: 20px;
+		padding: 5px;
+	}
+	#reset {
+		background-color: teal;
+		&:hover {
+			background-color: black;
+			color: teal;
+		}
+	}
+	#down, #up {
+		position: absolute;
+		width: 50px;
+		height: auto;
+		right: 0;
+		bottom: 0;
+		display: none;
+	}
+}

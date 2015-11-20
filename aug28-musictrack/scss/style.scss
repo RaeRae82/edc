@@ -1,0 +1,211 @@
+/* put your scss here */
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,300italic,700|Playfair+Display:400,700);
+
+$albums: adele ariana-grande bastille beyonce bruno-mars coldplay dmx guns-n-roses katy-perry mariah-carey misfits moby notorious-big offspring outkast pink-floyd sia stone-temple-pilots sublime weezer;
+$users: angie brianne claire franklin gary genie jacob jonathan phillip rebecca shaun tessa;
+
+
+body {
+	margin: 20px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+}
+strong {
+	font-family: inherit;
+	font-weight: 700;
+}
+// $headings: 6 5 4 3 2 1;
+// @each $heading in $headings {
+// 	$i: index($headings, $heading);
+// 	h#{$i}{
+// 		$size: $heading * 3 * .1;
+// 		font-size: $size * 1em;
+// 	}
+// }
+
+$hstart: 3em;
+@for $i from 1 through 6 {
+	h#{$i}{
+		font-size: $hstart;
+	}
+	$hstart: $hstart - 0.4em;
+}
+
+//@for $i from 1 through 6 {
+//	h#{$i}{
+//		font-size: (3 / $i * 1em);
+//	}
+//}
+
+
+
+h1, h2, h3, , h4, h5, h6 {
+	font-family: 'Playfair Display', serif;
+	font-weight: 400;
+}
+main {
+	display: flex;
+	flex-direction: row;
+	.bio {
+		flex: 1;
+	}
+	.stats-wrap {
+		flex: 2;
+	}
+}
+
+.bio {
+	img {
+		width: 75%;
+		display: block;
+		margin: 0 auto;
+		border-radius: 50%;
+		padding: 10px;
+		border: 1px solid lightgray;
+	}
+	@media screen and (max-width: 991px){
+		.img-lg {display: none;}
+		.img-sm {display: block;}
+	}
+	@media screen and (min-width: 992px){
+		.img-lg {display: block;}
+		.img-sm {display: none;}
+	}
+	blockquote {
+		font-size: 1.25em;
+		font-style: italic;
+		padding: 1em 2em;
+		margin: 50px 0;
+		border-left: 2px solid lightgray;
+		position: relative;
+		&::before {
+			content: '\201C';
+			font: {
+				family: 'Playfair Display', serif;
+				style: normal;
+				size: 5em;
+			}
+			position: absolute;
+			top: -.5em;
+			left: 0;
+		}
+	}
+	.album-wrap {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		@each $album in $albums {
+			$i: index($albums, $album);
+			div:nth-of-type(#{$i}){
+				background-image: url('../img/album-#{$album}.jpg');
+			}
+		}
+		div {
+			width: 85px;
+			height: 85px;
+			margin: 5px;
+			background: {
+				position: center;
+				size: 100%;
+				repeat: no-repeat;
+			}
+		}
+	}
+}
+
+.stats-graph {
+	$graph-color: hsla(200, 30%, 60%, .25);
+	background-color: $graph-color;
+	padding: 20px;
+	h1 {
+		text-align: center;
+		color: opacify($graph-color, 1);
+	}
+	div {
+		margin-bottom: 20px;
+		background-color: $graph-color;
+		border-top-left-radius: 100px;
+		border-bottom-left-radius: 100px;
+		padding: 5px;
+		display: flex;
+	}
+	@each $user in $users {
+		$i: index($users, $user);
+		div:nth-of-type(#{$i})::before {
+			background-image: url('../img/user-#{$user}.jpg');
+		}
+		div:nth-of-type(#{$i}) span::before {
+			content: '#{$user}';
+		}
+	}
+	div::before {
+		flex: none;
+		content: "";
+		display: block;
+		width: 50px;
+		height: 50px;
+		border-radius: 50%;
+		margin-right: 5px;
+		background: {
+			position: center;
+			size: 100%;
+			repeat: no-repeat;
+		}
+	}
+	@for $i from 1 through 12 {
+		$listens: random(100) + 20;
+		$listens-perc: ($listens * 1%);
+		div:nth-of-type(#{$i}) span {
+			width: calc(#{$listens-perc} - 55px);
+			background-color: hsl( ($listens * 2), $listens-perc, 50%);
+		}
+	}
+	span {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		height: 50px;
+		background-color: opacify($graph-color, 1);
+		padding: 0 10px;
+		font-family: "Playfair Display", serif;
+		color: white;
+	}
+}
+
+.stats-deets {
+	ul {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: no-wrap;
+		list-style: none;
+		padding: 0;
+		overflow: auto;
+		width: 100%;
+	}
+	li {
+		flex: none;
+		width: 50vw;
+		padding: 20px;
+	}
+	@each $album in $albums {
+		$i: index($albums, $album);
+		li:nth-of-type(#{$i}) div {
+			background-image: url('../img/album-#{$album}.jpg');
+		}
+	}
+	div {
+		width: 25vw;
+		height: 25vw;
+		background: {
+			position: center;
+			size: 100%;
+			repeat: no-repeat;
+		}
+	}
+}
+
+
+
+
+

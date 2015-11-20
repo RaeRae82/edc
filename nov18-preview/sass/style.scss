@@ -1,0 +1,134 @@
+@import "reset";
+@import "fontawesome";
+@import "variables";
+
+/* sass goes here */
+
+
+$white: hsla(0, 0%, 96%, 1);
+$whitelite: hsla(0, 0%, 100%, 1);
+$whitedrk: hsla(0, 0%, 86%, 1);
+
+$black: hsla(0, 0%, 9%, 1);
+$blacklite: hsla(0, 0%, 29%, 1);
+$blackdrk: hsla(0, 0%, 0%, 1);
+
+$key: hsla(224, 18%, 35%, 1);
+
+$comp: hsla(44, 18%, 65%, 1);
+$compdrk: hsla(44, 18%, 55%, 1);
+
+
+@mixin border($color, $radius){
+	border: 1px solid $color;
+	border-radius: $radius;
+}
+// GLOBAL style start
+body {
+	font: {
+		size: 100%;
+		weight: 200;
+		family: sans-serif;
+	}
+	line-height: 1.35em;
+	color:$black;
+	background-color: $whitedrk;
+}
+// GLOBAL style end
+
+// MAIN style start
+main {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	width: 80vw;
+	margin: 0 auto;
+	background-color: $key;
+	padding: 50px 25px;
+	> div {
+		width: 40%;
+		background-color: $white;
+		> div:first-child {
+			display: flex;
+			position: relative;
+			overflow: hidden;
+			img {
+				width: 100%;
+				height: auto;
+			}
+			div {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				top: 100%;
+				left: 0;
+				background-color: transparentize($black, .25);
+				color: $whitelite;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				p {
+					width: 85%;
+					text-align: justify;
+				}
+				p::before {
+					content: "\f206";
+					display: block;
+					font: normal normal normal 14px/1 FontAwesome;
+					font-size: inherit;
+					text-rendering: auto;
+					-webkit-font-smoothing: antialiased;
+					-moz-osx-font-smoothing: grayscale;
+					font-size: 2.5em;
+					line-height: 1.5;
+				}
+			}
+		}
+		> div:last-child{
+			padding: 20px 10px;
+			a {
+				display: inline-block;
+				@include border($compdrk, 4px);
+				background-color: $comp;
+				padding: 5px 10px;
+			}
+		}
+	}
+	> div:nth-child(1){
+		> div:first-child p::before {
+			content: '\f209';
+		}
+	}
+}
+// MAIN style end
+
+
+
+
+
+
+
+
+
+
+
+// $drkgray: hsla(210, 13%, 15%, 1);
+// $white: hsla(0, 0%, 100%, 1);
+
+
+// body {
+// 	margin: 0 75px;
+// }
+// #container {
+// 	display: flex;
+// 	width: 100vw;
+// 	height: 100vw;
+// 	margin: 0 auto;
+// }
+// .brd{
+// 	border: 20px solid $drkgray;
+// }
+// img {
+// 	width: 100%;
+// 	height: 300px;
+// }

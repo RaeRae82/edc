@@ -1,0 +1,94 @@
+header nav::before, header nav::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 100%;
+  margin: 0;
+  background-color: #cfd2d8;
+}
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-top: 0;
+}
+
+h1 {
+  margin: 0;
+  font-weight: 300;
+}
+
+h3 {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.btn {
+  display: inline-block;
+  padding: 15px 30px;
+  border-radius: 5px;
+  font-weight: 700;
+}
+.btn.btn-info {
+  background-color: #636979;
+}
+.btn.btn-signup {
+  background-color: #4c515d;
+}
+
+header span, header span::before, header span::after, #silos li::before, #features li:before {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antiaLiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+header {
+  background-color: white;
+  color: #636979;
+}
+header nav h1 {
+  float: left;
+  line-height: 2em;
+}
+header nav ul {
+  float: right;
+}
+header nav li {
+  display: inline-block;
+  line-height: 3em;
+}
+header nav li a {
+  color: #636979;
+  transition: color 200ms ease-in-out;
+}
+header nav li a:hover {
+  color: #00b37a;
+}
+
+.left {
+  background-color: white;
+  padding: 50px 0;
+}
+.left h2 {
+  text-align: center;
+}
+.left p {
+  text-align: center;
+  color: #00b37a;
+}

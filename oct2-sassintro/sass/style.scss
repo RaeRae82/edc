@@ -1,0 +1,73 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+
+$red: hsla(0, 100%, 50%, 1);
+$dgerblue: hsla(210, 100%, 56%, 1);
+$purple: hsla(300, 100%, 25%, 1);
+$turquoise: hsla(174, 72%, 56%, 1);
+$pink: hsla(350, 100%, 88%, 1);
+$size: 24px;
+
+$rand: random(360);
+$randColor: hsla($rand, 50%, 50%, 1);
+
+%clearfix {
+	&::before, &::after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+}
+%gradient {
+	background-image: linear-gradient(to top, $dgerblue, $purple)
+}
+
+ul {
+	@extend %clearfix;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	background-color: lightgray;
+	li {
+		@extend %clearfix;
+		width: 50%;
+		float: left;
+		text-align: center;
+		background-color: red;
+		i {
+			@extend %gradient;
+			float: right;
+		}
+		span {
+			@extend %gradient;
+			float: left;
+		}
+	}
+}
+
+
+
+
+
+// li {
+// 	font-size: $size;
+// }
+// li:first-child {
+// 	color: $red;
+
+// }
+// li:nth-child(2) {
+// 	color: $dgerblue;
+// }
+// li:nth-child(3) {
+// 	color: $purple;
+// }
+// li:nth-child(4) {
+// 	color: $turquoise;
+// }
+// li:nth-child(5) {
+// 	color: $pink;
+// }
+// i.fa{
+// 	font-size: $size/2;
+// 	padding: 0 $size;
+// }
