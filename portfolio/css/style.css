@@ -75,6 +75,7 @@ header p {
 }
 
 main {
+
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -95,6 +96,9 @@ main a {
   padding: 20px;
 }
 
+
+
+
 .about {
   background-color: #1f8fff;
 }
@@ -113,7 +117,10 @@ main a {
 
 .contact {
   background-color: #ebf5ff;
-  display: block;
+
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;

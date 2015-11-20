@@ -59,6 +59,7 @@ header {
 
 // MAIN styles start
 main {
+
 	display: flex;
 	flex-wrap: wrap;
 	background-color: lighten($dgblue, 40);
@@ -73,6 +74,10 @@ main {
 	a {
 		padding: 20px;
 	}
+
+	background-color: lighten($dgblue, 40);
+	margin: 0;
+
 }
 // MAIN styles end
 
@@ -94,7 +99,10 @@ main {
 // CONTACT styles start
 .contact {
 	background-color: lighten($dgblue, 40);
-	display: block;
+
+
+	display: flex;
+
 	justify-content: center;
 	padding-top: 75px;
 	i {
