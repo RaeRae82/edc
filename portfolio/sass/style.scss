@@ -61,6 +61,10 @@ header {
 main {
 	background-color: lighten($dgblue, 40);
 	margin: 0;
+	img {
+		width: 300px;
+		height: 200px;
+	}
 }
 // MAIN styles end
 
@@ -82,7 +86,7 @@ main {
 // CONTACT styles start
 .contact {
 	background-color: lighten($dgblue, 40);
-	display: flex;
+	display: block;
 	justify-content: center;
 	padding-top: 75px;
 	i {

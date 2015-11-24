@@ -1,0 +1,64 @@
+@import "reset";
+@import "fontawesome";
+@import "variables";
+
+/* sass goes here */
+
+
+
+header {
+	background: {
+		image: url(../img/pic01.jpg);
+		position: center;
+		size: cover;
+		height: auto;
+		repeat: no-repeat;
+	}
+	h2 {
+		text-align: center;
+		padding: 50px 0 0;
+		color: white;
+		font-size: 2em;
+	}
+	nav {
+		display: flex;
+		justify-content: center;
+		ul {
+			display: flex;
+			li {
+			padding: 10px;
+			font-size: 1.5em;
+			flex-direction: column;
+				a {
+					color: white;
+				}
+
+			}
+			.dropdown ul {
+				display: none;
+			}
+		}
+	}
+	section {
+		text-align: center;
+		color: white;
+		padding: 50px 0 0; 
+		h1, p {
+			font-size: 1.5em;
+			padding: 0 75px;
+		}
+		h1 {
+			font-size: 2.5em;
+		}
+		button {
+			color: white;
+			background: hsla(151, 57%, 51%, 1);
+			border-radius: 40px;
+			font-size: 1.5em;
+			padding: 10px 50px;
+			border: none;
+			margin-bottom: 75px;
+			margin-top: 50px;
+		}
+	}
+}

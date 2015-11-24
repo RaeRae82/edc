@@ -1,0 +1,28 @@
+@import "reset";
+@import "fontawesome";
+@import "variables";
+
+
+
+
+nav {
+	ul, li, a {
+		display: flex;
+	}
+	a {
+		padding: 10px;
+	}
+	.dropdown {
+		position: relative;
+		form, ul{
+			display: none;
+			position: absolute;
+			top: 100%;
+			left: 0;
+		}
+		&.visible ul,
+		&.visible form {
+			display: block;                           
+		}
+	}
+}

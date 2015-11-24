@@ -144,3 +144,35 @@ main {
 	}
 }
 // MAIN styles end
+
+@media screen and (max-width: 750px) {
+	section {
+		h1, div, {
+			display: inline;
+			padding: 20px;
+		}
+	}
+}
+@media screen and (max-width: 750px) {
+	main {
+		div {
+			display: inline;
+		}
+	}
+}
+
+// @media screen and (max-width: 750px) {
+// 	.about {
+// 		.text {
+// 			display: inline;
+// 			padding: 20px;
+// 		}
+// 	}
+// }
+// @media screen and (max-width: 750px) {
+// 	.content {
+// 			div {
+// 				display: inline;
+// 			}
+// 	}
+// }
