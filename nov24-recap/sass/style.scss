@@ -1,0 +1,101 @@
+@import "reset";
+@import "fontawesome";
+@import "variables";
+
+/* sass goes here */
+
+// HEADER styles start
+header {
+	height: 500px;
+	background: {
+		image: url(https://unsplash.it/640/425?image=339);
+		size: cover;
+		position: center;
+
+	}
+	text-align: center;
+	.toggle {
+		text-align: end;
+	}
+	.heading {
+		padding: 10%;
+		text-align: center;
+		color: white;
+		margin: 0 auto;
+		h1 {
+			font-size: 3em;
+		}
+		p {
+			font-size: 1.5em;
+		}
+	}
+}
+// HEADER styles end
+
+// NAV styles start
+.navbar {
+	background-color: red;
+	// position: fixed;
+	// width: 100%;
+	ul {
+		display: flex;
+		justify-content: center;
+	}
+	li {
+		padding: 20px;
+		a {
+			color: white;
+			font-size: 1.2em;
+			padding: 21px;
+			border-radius: 4px;
+			&:hover {
+				color: red;
+				background-color: lightblue;
+			}
+		}
+	}
+}
+// NAV styles end
+
+// MAIN styles start
+main {
+	background-color: lightblue;
+	h1, h2, h3 {
+		text-align: center;
+		padding: 20px;
+	}
+	div {
+		display: flex;
+		img {
+			margin: 0 auto;
+			justify-content: center;
+		}
+	}
+	blockquote, p, ul{
+		padding: 20px;
+		text-align: center;
+	}
+	ul {
+		padding-bottom: 100px;
+	}
+}
+// MAIN styles end
+
+// JS styles start
+.drkcolor {
+	background-color: gray;
+}
+.newImg {
+	background-image: url(https://unsplash.it/640/425?image=95);
+}
+.newNav {
+	background-color: dodgerblue;
+}
+.fixed {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: transparentize(black, .5);
+}
+// JS styles end
