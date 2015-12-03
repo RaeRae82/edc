@@ -1,0 +1,32 @@
+@import "reset";
+@import "fontawesome";
+@import "variables";
+
+html {
+	height: 100%;
+	background: {
+		image: url('../img/marbleized-wood-flooring-1.jpg');
+		position: center;
+		size: cover;
+	}
+}
+body {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	> img {
+		border-radius: 10px;
+		box-shadow: 0 5px 10px transparentize(black, .3);
+	}
+	.overlay {
+		display: none;
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background-color: transparentize(black, .25);
+		z-index: 1000;
+	}
+}
