@@ -59,11 +59,19 @@ header {
 
 // MAIN styles start
 main {
+	display: flex;
+	flex-wrap: wrap;
 	background-color: lighten($dgblue, 40);
 	margin: 0;
+	h1 {
+		display: none;
+	}
 	img {
 		width: 300px;
 		height: 200px;
+	}
+	a {
+		padding: 20px;
 	}
 }
 // MAIN styles end
