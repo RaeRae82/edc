@@ -4,9 +4,11 @@ var submitBtn = document.querySelector('button[type="submit"]');
 var guessBox = document.querySelector('input[type="text"]');
 var math = Math.floor(Math.random() * 100) + 1;
 
+
 // var img = '<img/photo-1421747839823-baf55e319e87.jpg"height="auto" width="50"/>';
 
 var img = '<img src="img/kitten.png"height="auto" width="50"/>';
+
 
 
 // divObj.innerHTML = img;

@@ -76,6 +76,7 @@ header p {
 
 main {
 
+
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -95,7 +96,6 @@ main img {
 main a {
   padding: 20px;
 }
-
 
 
 
