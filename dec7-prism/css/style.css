@@ -2579,7 +2579,7 @@ h1, h2, h3, h4, h5, h6, p {
       -ms-flex-direction: start;
           flex-direction: start;
   font-size: 2.5em;
-  padding: 100px 0px 75px 50px;
+  padding: 90px 20px 75px 20px;
 }
 .heading p {
   color: #aca5bb;
@@ -2593,10 +2593,12 @@ h1, h2, h3, h4, h5, h6, p {
   padding: 15px 40px;
 }
 .heading div {
-  width: 40%;
-  padding: 100px 50px 40px 50px;
+  width: 50%;
+  padding: 90px 20px 75px 20px;
 }
 .heading div .bord {
+  width: 100%;
+  box-sizing: border-box;
   border-left-width: 2px;
   border-left-style: solid;
   border-left-color: white;
@@ -2675,4 +2677,20 @@ h1, h2, h3, h4, h5, h6, p {
 
 .form {
   margin: 40px;
+}
+
+@media screen and (max-width: 750px) {
+  .heading {
+    width: auto;
+    display: block;
+  }
+  .heading h1 {
+    padding: 20px;
+  }
+  .heading div {
+    padding: 20px;
+  }
+  .heading div .bord {
+    border: none;
+  }
 }

@@ -2559,59 +2559,25 @@ h1, h2, h3, h4, h5, h6, p {
 /* sass goes here */
 html, body {
   height: 100%;
-}
-
-body {
-  font-size: 100%;
-  background-color: #b7dbff;
+  background-color: #171717;
 }
 
 main {
+  height: 100%;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-
-#loginBox {
-  background-color: #ffdae0;
-  padding: 20px;
-  width: 300px;
-  border-radius: 5px;
-  margin: 75px auto;
+main div {
+  width: 12vw;
 }
-#loginBox form {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-#loginBox form .button {
-  -ms-flex-item-align: start;
-      -webkit-align-self: flex-start;
-          align-self: flex-start;
-  background-color: dodgerblue;
-}
-#loginBox form .button:hover {
-  background-color: black;
-  color: dodgerblue;
-}
-#loginBox form label {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-#loginBox form input {
-  font-size: 1.25em;
-  margin: 5px;
-  border: 2px solid lightgray;
-  border-radius: 5px;
-  background-color: #f2f2f2;
+main div img {
+  width: 100%;
+  height: auto;
 }

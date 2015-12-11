@@ -27,7 +27,7 @@ $purple: hsla(292, 28%, 37%, 1);
 	h1 {
 		flex-direction: start;
 		font-size: 2.5em;
-		padding: 100px 0px 75px 50px;
+		padding: 90px 20px 75px 20px;
 	}
 	p {
 		color: $litpurple;
@@ -41,9 +41,11 @@ $purple: hsla(292, 28%, 37%, 1);
 		padding: 15px 40px;
 	}
 	div {
-		width: 40%;
-		padding: 100px 50px 40px 50px;
+		width: 50%;
+		padding: 90px 20px 75px 20px;
 		.bord {
+			width:100%;
+			box-sizing: border-box;
 			border-left: {
 				width: 2px;
 				style: solid;
@@ -125,9 +127,18 @@ $purple: hsla(292, 28%, 37%, 1);
 	margin: 40px;
 }
 
-// @media screen and (max-width: 750px) {
-// 	.heading, .info, .images, .form{
-// 		display: inline;
-// 		// padding: 20px;
-// 	}
-// }
+@media screen and (max-width: 750px) {
+	.heading {
+		width: auto;
+		display: block;
+		h1 {
+			padding: 20px;
+		}
+		div {
+			padding: 20px;
+			.bord {
+				border: none;
+			}
+		}
+	}
+}
