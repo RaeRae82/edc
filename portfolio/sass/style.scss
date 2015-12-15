@@ -1,5 +1,5 @@
 @import "reset";
-// @import "fontawesome";
+@import "fontawesome";
 @import "variables";
 @import url(https://fonts.googleapis.com/css?family=Architects+Daughter|Dancing+Script);
 
@@ -11,7 +11,10 @@ body {
 	font-family: 'Architects Daughter', cursive;
 	font-size: 1.8em;
 }
-// NAV styles start
+.icon {
+	margin-bottom: 50px;
+}
+
 .navbar-default {
 	margin-bottom: 0;
 	background-color: lighten($dgblue, 35);
@@ -31,17 +34,20 @@ body {
 	}
 	
 }
-// NAV styles end
 
-// HEADER styles start
+
 header {
 	color: $white;
 	margin: 0;
 	background-color: $dgblue;
+	.icon {
+		margin-bottom: 50px;
+	}
 	.pic {
 		text-align: center;
-		padding: 75px 0;
+		padding: 100px 0 50px 0;
 		img {
+			width: 165px;
 			border-radius: 50%;
 		}
 	}
@@ -51,52 +57,60 @@ header {
 	}
 	p {
 		text-align: center;
-		padding: 20px 0 50px 0;
+		padding: 20px 0 75px 0;
 		margin-bottom: 0;
 	}
 }
-// HEADER styles end
 
-// MAIN styles start
+
 main {
-	display: flex;
-	flex-wrap: wrap;
 	background-color: lighten($dgblue, 40);
 	margin: 0;
+	width: 100%;
+	padding-right: 75px;
+	padding-left: 75px;
 	h1 {
-		display: none;
+		display: block;
+		padding-bottom: 20px;
 	}
-	img {
-		width: 300px;
-		height: 200px;
+	.icon {
+
 	}
-	a {
-		padding: 20px;
+	.pics {
+		display: flex;
+		padding-bottom: 100px;
+		a {
+			padding: 20px;
+			width: 25%;
+			display: block;
+			flex-wrap: wrap;
+			img {
+				width: 75%;
+				height: auto;
+			}
+		}
 	}
 }
-// MAIN styles end
 
-// ABOUT styles start
+
 .about {
 	background-color: $dgblue;
-	.text {
-		display: flex;
-	}
+	margin: 0;
 	p {
-		flex-direction: coulmn;
-		padding: 0 45px;
-		text-align: center;
+		margin-bottom: 0;
+		padding-bottom: 50px;
+		padding-right: 75px;
+		padding-left: 75px;
 	}
 }
 
-// ABOUT styles end
 
-// CONTACT styles start
 .contact {
 	background-color: lighten($dgblue, 40);
-	display: block;
+	display: flex;
 	justify-content: center;
-	padding-top: 75px;
+	padding: 75px 0 75px 0;
+	margin: 0;
 	i {
 		color: $dgblue;
 
@@ -106,20 +120,42 @@ main {
 		padding: 5px 20px;
 	}
 }
-// CONTACT styles end
+
 @media screen and (max-width: 750px) {
 	.about {
 		.text {
-			display: inline;
+			display: block;
 			padding: 20px;
 		}
 	}
 }
+
 @media screen and (max-width: 750px) {
-	.content {
-			div {
-				display: inline;
+	main {
+		.pics {
+			display: block;
+			padding-bottom: 100px;
+			a {
+				padding: 20px;
+				display: block;
+				width: 100%;
+				img {
+					width: 75%;
+					height: auto;
+				}
 			}
+		}
+	}
+}
+
+
+
+@media screen and (max-width: 750px) {
+	.contact {
+			display: block;
+		div {
+			padding: 20px;
+		}
 	}
 }
 
