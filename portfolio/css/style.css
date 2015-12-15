@@ -2623,6 +2623,17 @@ header p {
 }
 
 main {
+<<<<<<< HEAD
+=======
+
+
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+>>>>>>> 8f52a9825a647a4ca936e397185aa4426d5fab1e
   background-color: #ebf5ff;
   margin: 0;
   width: 100%;
@@ -2652,6 +2663,8 @@ main .pics a img {
   height: auto;
 }
 
+
+
 .about {
   background-color: #1f8fff;
   margin: 0;
@@ -2665,6 +2678,10 @@ main .pics a img {
 
 .contact {
   background-color: #ebf5ff;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8f52a9825a647a4ca936e397185aa4426d5fab1e
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
