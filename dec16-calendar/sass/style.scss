@@ -1,0 +1,17 @@
+@import "reset";
+@import "fontawesome";
+@import "variables";
+
+/* sass goes here */
+
+div {
+	display: flex;
+	h1 {
+		text-align: center;
+		display: inline-block;
+	}
+	li {
+		list-style: none;
+		padding: 20px;
+	}
+}

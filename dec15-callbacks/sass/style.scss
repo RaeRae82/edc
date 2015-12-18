@@ -1,0 +1,44 @@
+@import "reset";
+@import "fontawesome";
+@import "variables";
+
+/* sass goes here */
+
+$green: hsla(107, 47%, 51%, 1);
+$yellow: hsla(41, 97%, 57%, 1);
+$orange: hsla(28, 92%, 54%, 1);
+$red: hsla(359, 73%, 55%, 1);
+$purple: hsla(299, 42%, 42%, 1);
+$blue: hsla(197, 100%, 43%, 1);
+
+// ^ =  starts
+// $ = ends with
+// * = contains
+
+div[class^="div"]{
+	height: 50px;
+	text-align: center;
+	color: white;
+	font-size: 3vw;
+}
+.div {
+	&-green {
+		background-color: $green;
+	}
+
+	&-yellow {
+		background-color: $yellow;
+	}
+	&-orange{
+		background-color: $orange;
+	}
+	&-red {
+		background-color: $red;
+	}
+	&-purple {
+		background-color: $purple;		
+	}
+	&-blue {
+		background-color: $blue;
+	}
+}
